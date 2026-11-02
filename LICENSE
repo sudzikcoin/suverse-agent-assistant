@@ -2,8 +2,9 @@ MIT License
 
 Copyright (c) 2026 SuVerse LLC
 
-This licence covers the schemas, the taxonomy and the documentation in this repository. The Versum catalogue's
-own code is not part of this repository and is not licensed by it.
+This licence covers everything in this repository: the schemas, the taxonomy, the documentation, the open reader
+(reader/) and the npm package source (npm/). The hosted Versum catalogue's service code is not part of this
+repository and is not licensed by it.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation

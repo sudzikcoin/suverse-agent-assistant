@@ -18,7 +18,7 @@ the cards to any MCP client.
 The MCP door (streamable HTTP, no key needed):
 
 ```
-https://versum.suverse.io/mcp/catalog
+https://versum.suverse.io/mcp
 ```
 
 Config for an MCP client that takes a JSON server list with streamable-HTTP servers (checked by connecting the
@@ -27,7 +27,7 @@ official MCP TypeScript SDK client with exactly this entry: 13 tools listed, a l
 ```json
 {
   "mcpServers": {
-    "versum": { "type": "http", "url": "https://versum.suverse.io/mcp/catalog" }
+    "versum": { "type": "http", "url": "https://versum.suverse.io/mcp" }
   }
 }
 ```
@@ -174,7 +174,7 @@ flowchart LR
 
 ## Roadmap
 
-- The permanent address `https://versum.suverse.io/mcp` for this door, and listings in MCP catalogues.
+- Listings in more MCP catalogues.
 - An npm package `@suverselabs/versum-mcp` (stdio) with typed functions for the tools.
 - An open reader with a shared cache: read any business website yourself.
 - WhatsApp click-to-chat doors.

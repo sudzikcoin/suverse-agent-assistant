@@ -1,0 +1,12 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.sudzikcoin/versum-agent-assistant",
+  "title": "Versum Agent Assistant",
+  "description": "Local businesses for AI agents: what they sell, prices, delivery quotes, order and booking links.",
+  "version": "1.0.0",
+  "websiteUrl": "https://versum.suverse.io",
+  "repository": { "url": "https://github.com/sudzikcoin/versum-agent-assistant", "source": "github" },
+  "remotes": [
+    { "type": "streamable-http", "url": "https://versum.suverse.io/mcp" }
+  ]
+}

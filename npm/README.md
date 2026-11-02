@@ -70,6 +70,26 @@ plus `call(name, args)` for any tool. Parameters are TypeScript types made from 
 `getBusiness` return a typed `Card`; the other answers are plain JSON objects. The methods are generated from the door's
 tool list (`npm run generate`), so a new tool only needs a rebuild. Other languages: on request.
 
+## Read any business website
+
+The same package runs Versum's open reader on your machine — the readers Versum's catalogue uses, for any site:
+
+```
+npx -y @suverselabs/versum-mcp read https://example-business.com --pretty
+```
+
+Flags: `--pretty` (a short summary), `--json`, `--no-model` (no model call even with `ANTHROPIC_API_KEY` set),
+`--no-share` (no shared cache), `--fresh` (read even if the cache has a fresh card). From code:
+
+```ts
+import { read } from '@suverselabs/versum-mcp'
+const card = await read('https://example-business.com', { model: false })
+// card.offerings (title, price, currency, link), card.doors (order, book, reserve, request_quote, call, email), card.evidence
+```
+
+The shared cache is free and on by default; `--no-share` or `VERSUM_SHARE=0` turns it off. What is sent and kept:
+https://versum.suverse.io/privacy. Source: https://github.com/sudzikcoin/versum-agent-assistant/tree/main/reader
+
 ## Links
 
 - Schema, taxonomy and docs: https://github.com/sudzikcoin/versum-agent-assistant

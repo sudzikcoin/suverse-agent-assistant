@@ -1,0 +1,3 @@
+# the reader bundles are built from ../reader (npm run build there), not committed
+reader.cjs
+reader-cli.cjs

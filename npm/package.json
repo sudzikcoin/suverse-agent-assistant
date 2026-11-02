@@ -1,6 +1,6 @@
 {
   "name": "@suverselabs/versum-mcp",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Local businesses for AI agents: what they sell, prices, delivery quotes, order and booking links.",
   "mcpName": "io.github.sudzikcoin/versum-agent-assistant",
   "type": "module",
@@ -16,14 +16,16 @@
     "versum-mcp": "bin.mjs"
   },
   "files": [
-    "bin.mjs",
-    "index.mjs",
-    "index.d.ts",
-    "tools.generated.mjs",
-    "card.schema.json",
-    "scripts/generate.mjs",
+    "LICENSE",
     "README.md",
-    "LICENSE"
+    "bin.mjs",
+    "card.schema.json",
+    "index.d.ts",
+    "index.mjs",
+    "reader-cli.cjs",
+    "reader.cjs",
+    "scripts/generate.mjs",
+    "tools.generated.mjs"
   ],
   "scripts": {
     "generate": "node scripts/generate.mjs"
@@ -49,6 +51,7 @@
     "email": "info@suverse.io"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0"
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "@anthropic-ai/sdk": "^0.127.0"
   }
 }

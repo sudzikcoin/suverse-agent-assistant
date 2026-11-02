@@ -21,8 +21,15 @@ const args = process.argv.slice(2)
 const url = process.env.VERSUM_MCP_URL || 'https://versum.suverse.io/mcp'
 const log = (...a) => console.error('[versum-mcp]', ...a)
 
+// `versum-mcp read <url> [--pretty] [--json] [--no-model] [--no-share] [--fresh]` — Versum's open reader on this machine
+if (args[0] === 'read') {
+  const { spawnSync } = await import('node:child_process')
+  const { fileURLToPath } = await import('node:url')
+  const r = spawnSync(process.execPath, [fileURLToPath(new URL('./reader-cli.cjs', import.meta.url)), ...args], { stdio: 'inherit' })
+  process.exit(r.status ?? 1)
+} else {
 if (args.includes('--help') || args.includes('-h')) {
-  console.error(`usage: versum-mcp [--tools]\nA stdio MCP server forwarding to ${url}. No key needed.`)
+  console.error(`usage: versum-mcp [--tools] | versum-mcp read <url> [--pretty] [--json] [--no-model] [--no-share] [--fresh]\nA stdio MCP server forwarding to ${url} (no key needed), and Versum's open reader.`)
   process.exit(0)
 }
 
@@ -46,3 +53,4 @@ server.setRequestHandler(ListToolsRequestSchema, async (req) => upstream.listToo
 server.setRequestHandler(CallToolRequestSchema, async (req) => upstream.callTool(req.params))
 await server.connect(new StdioServerTransport())
 log(`ready — forwarding to ${url}`)
+}

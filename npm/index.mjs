@@ -7,6 +7,7 @@
 import { Client } from '@modelcontextprotocol/sdk/client/index.js'
 import { StreamableHTTPClientTransport } from '@modelcontextprotocol/sdk/client/streamableHttp.js'
 import { TOOLS } from './tools.generated.mjs'
+import { createRequire } from 'node:module'
 
 export { TOOLS }
 
@@ -46,4 +47,9 @@ export class Versum {
 
 for (const t of TOOLS) {
   Versum.prototype[t.method] = function (args = {}) { return this.call(t.name, args) }
+}
+
+/** Versum's open reader, on this machine: read(url, { model, share, fresh, base }) → a card with every value's quote */
+export async function read(url, options = {}) {
+  return createRequire(import.meta.url)('./reader.cjs').read(url, options)
 }

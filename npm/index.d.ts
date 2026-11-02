@@ -530,4 +530,34 @@ export declare class Versum {
   orderStatus(args: OrderStatusInput): Promise<Record<string, unknown>>
 }
 
+/** The open reader's card (reader/README.md in sudzikcoin/versum-agent-assistant). */
+export type ReaderCard = {
+  reader: { name: string; version: string }
+  url: string
+  final_url: string | null
+  read_at: string
+  platform: { name: string; confidence: number | null } | null
+  business: { name: string | null; phone: string | null; email: string | null; hours: string[] | null }
+  offerings: Array<{ title: string; price: number | null; price_max: number | null; currency: string | null; kind: 'product' | 'menu_item' | 'service'; url: string | null; section: string | null; duration_min: number | null }>
+  doors: Array<{ action: 'order' | 'reserve' | 'book' | 'request_quote' | 'contact' | 'call' | 'email'; method: string | null; url: string; provider: string | null }>
+  delivery: { lead_time: string | null; policy_url: string | null } | null
+  evidence: Array<{ field: string; quote: string; url: string | null }>
+  notes: string[]
+  model: { used: boolean; model: string | null; cost_usd: number }
+}
+
+export interface ReadOptions {
+  /** a model call with your own ANTHROPIC_API_KEY when nothing structured was found (default true) */
+  model?: boolean
+  /** the free shared cache (default true; VERSUM_SHARE=0 also turns it off) */
+  share?: boolean
+  /** read even when the shared cache has a fresh card */
+  fresh?: boolean
+  /** the cache's address (default https://versum.suverse.io) */
+  base?: string
+}
+
+/** Read one business website on this machine with Versum's open reader. */
+export declare function read(url: string, options?: ReadOptions): Promise<ReaderCard>
+
 export declare const TOOLS: ReadonlyArray<{ name: string; method: string }>

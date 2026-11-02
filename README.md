@@ -182,4 +182,5 @@ flowchart LR
 ## License and contact
 
 MIT for the schemas, the taxonomy and the documentation in this repository; the catalogue's code is closed.
+[Privacy Policy](https://versum.suverse.io/privacy) · [Terms of Service](https://versum.suverse.io/terms) (SuVerse LLC).
 Contact: info@suverse.io. The compute side of Versum is [versum-node](https://github.com/sudzikcoin/versum-node).

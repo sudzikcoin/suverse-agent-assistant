@@ -1,0 +1,1609 @@
+{
+  "source": "list_niches on https://versum.suverse.io/mcp/catalog, 2026-11-02",
+  "count": 128,
+  "how_it_works": "A niche is a trade (key) with the words people use for it (also_called) and the kinds of things it sells (tags). Every card belongs to one or more niches; list_niches, list_cards and search_catalog use them.",
+  "niches": [
+    {
+      "key": "restaurant",
+      "label": "restaurant",
+      "also_called": [
+        "restaurants",
+        "steakhouse",
+        "steak house",
+        "pizzeria",
+        "diner"
+      ],
+      "tags": [
+        "dish",
+        "drink",
+        "dessert",
+        "american",
+        "mexican",
+        "pizza",
+        "fast food",
+        "italian",
+        "seafood",
+        "sushi",
+        "chinese",
+        "sandwich shop"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "florist",
+      "label": "florist",
+      "also_called": [
+        "florists",
+        "flower shop",
+        "flowers",
+        "floral",
+        "floral design"
+      ],
+      "tags": [
+        "bouquet",
+        "plant",
+        "balloon",
+        "candle",
+        "plush toy",
+        "gift",
+        "sweets",
+        "add on",
+        "supermarket",
+        "dish",
+        "dessert",
+        "drink"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "hair salon",
+      "label": "hair salon",
+      "also_called": [
+        "salon",
+        "hair stylist",
+        "hairdresser",
+        "hair"
+      ],
+      "tags": [
+        "treatment",
+        "color",
+        "haircut",
+        "beauty",
+        "beauty service",
+        "nails",
+        "repair service",
+        "barber shop",
+        "moving service",
+        "cleaning service",
+        "care service",
+        "make up artist"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "gas station",
+      "label": "gas station",
+      "also_called": [],
+      "tags": [
+        "fast food restaurant",
+        "convenience store",
+        "truck stop",
+        "atm"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "barber",
+      "label": "barber",
+      "also_called": [
+        "barber shop",
+        "barbershop"
+      ],
+      "tags": [
+        "shop",
+        "haircut",
+        "hair treatment",
+        "hair color",
+        "hair salon",
+        "cleaning service",
+        "beauty salon"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "pizza",
+      "label": "pizza",
+      "also_called": [],
+      "tags": [
+        "dish",
+        "restaurant",
+        "delivery",
+        "drink",
+        "italian restaurant",
+        "dessert",
+        "cuban restaurant",
+        "cafe",
+        "amusement center",
+        "bar grill",
+        "sports bar",
+        "takeout restaurant"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "nail salon",
+      "label": "nail salon",
+      "also_called": [
+        "nails"
+      ],
+      "tags": [
+        "hair treatment",
+        "cleaning service",
+        "add on",
+        "beauty service",
+        "hair color",
+        "moving service",
+        "repair service",
+        "haircut",
+        "beauty",
+        "hair",
+        "spa"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "print shop",
+      "label": "print shop",
+      "also_called": [],
+      "tags": [
+        "shipping service",
+        "manufacturer",
+        "electronics store",
+        "drug store",
+        "locksmith",
+        "clothing store",
+        "consultant",
+        "laundry",
+        "suppliers"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "grocery",
+      "label": "grocery",
+      "also_called": [],
+      "tags": [
+        "supermarket",
+        "store",
+        "discount store",
+        "department store",
+        "butcher shop",
+        "convenience store",
+        "gas station",
+        "asian store",
+        "food store",
+        "market"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "bakery",
+      "label": "bakery",
+      "also_called": [
+        "cake shop",
+        "patisserie"
+      ],
+      "tags": [
+        "dessert",
+        "dish",
+        "supermarket",
+        "coffee shop",
+        "grocery store",
+        "cafe",
+        "drink",
+        "ice cream shop",
+        "bagel shop",
+        "department store",
+        "donut shop",
+        "colombian restaurant"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "oil change",
+      "label": "oil change",
+      "also_called": [],
+      "tags": [
+        "car repair and maintenance service",
+        "tire shop",
+        "auto parts store",
+        "car dealer",
+        "car wash"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "pharmacy",
+      "label": "pharmacy",
+      "also_called": [],
+      "tags": [],
+      "travels_to_customer": false
+    },
+    {
+      "key": "medical clinic",
+      "label": "medical clinic",
+      "also_called": [],
+      "tags": [
+        "doctor",
+        "center",
+        "health",
+        "physical therapist"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "storage",
+      "label": "storage",
+      "also_called": [
+        "self storage"
+      ],
+      "tags": [
+        "moving service",
+        "service",
+        "mover"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "ev charging station",
+      "label": "ev charging station",
+      "also_called": [],
+      "tags": [
+        "electric vehicle"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "catering",
+      "label": "catering",
+      "also_called": [],
+      "tags": [
+        "dish",
+        "caterer",
+        "sandwich shop",
+        "fast food restaurant",
+        "drink",
+        "italian restaurant",
+        "restaurant",
+        "cafe",
+        "pizza restaurant",
+        "bakery",
+        "dessert",
+        "mexican restaurant"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "bar",
+      "label": "bar",
+      "also_called": [
+        "wine bar",
+        "pub",
+        "cocktail bar"
+      ],
+      "tags": [
+        "dish",
+        "drink",
+        "restaurant",
+        "grill",
+        "dessert",
+        "american restaurant",
+        "sports",
+        "seafood restaurant",
+        "italian restaurant",
+        "liquor store",
+        "steak house",
+        "cafe"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "pet grooming",
+      "label": "pet grooming",
+      "also_called": [],
+      "tags": [
+        "plush toy",
+        "care",
+        "veterinary care",
+        "boarding service",
+        "store"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "auto repair",
+      "label": "auto repair",
+      "also_called": [],
+      "tags": [
+        "car and maintenance service",
+        "tire shop",
+        "parts store"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "hotel",
+      "label": "hotel",
+      "also_called": [],
+      "tags": [
+        "extended stay",
+        "restaurant"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "optometrist",
+      "label": "optometrist",
+      "also_called": [],
+      "tags": [
+        "health",
+        "doctor",
+        "medical clinic"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "fuel delivery",
+      "label": "fuel delivery",
+      "also_called": [],
+      "tags": [
+        "convenience store",
+        "gas station",
+        "fast food restaurant",
+        "auto parts store",
+        "car repair and maintenance service",
+        "meal",
+        "cafe",
+        "car dealer",
+        "medical center",
+        "mover",
+        "moving service",
+        "shipping service"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "clothing store",
+      "label": "clothing store",
+      "also_called": [],
+      "tags": [
+        "department",
+        "women s",
+        "thrift",
+        "drug",
+        "tailor",
+        "sporting goods",
+        "shoe",
+        "shopping mall"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "tire shop",
+      "label": "tire shop",
+      "also_called": [],
+      "tags": [
+        "car repair and maintenance service",
+        "suppliers"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "beauty salon",
+      "label": "beauty salon",
+      "also_called": [
+        "spa",
+        "beauty professional",
+        "beauty"
+      ],
+      "tags": [
+        "service",
+        "hair treatment",
+        "nails",
+        "spa",
+        "massage spa",
+        "hair",
+        "haircut",
+        "nail",
+        "massage service",
+        "hair color",
+        "wellness center",
+        "beautician"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "liquor store",
+      "label": "liquor store",
+      "also_called": [],
+      "tags": [
+        "supermarket",
+        "convenience",
+        "grocery",
+        "gas station",
+        "bar",
+        "bar grill",
+        "wine bar"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "massage",
+      "label": "massage",
+      "also_called": [],
+      "tags": [
+        "beauty service",
+        "service",
+        "hair treatment",
+        "spa",
+        "beauty salon",
+        "nails",
+        "chiropractor",
+        "hair color",
+        "cleaning service",
+        "hair salon",
+        "haircut",
+        "nail salon"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "auto parts store",
+      "label": "auto parts store",
+      "also_called": [],
+      "tags": [
+        "car repair and maintenance service",
+        "tire shop"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "parking",
+      "label": "parking",
+      "also_called": [],
+      "tags": [
+        "lot",
+        "garage",
+        "storage"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "veterinarian",
+      "label": "veterinarian",
+      "also_called": [],
+      "tags": [
+        "veterinary care"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "coffee shop",
+      "label": "coffee shop",
+      "also_called": [
+        "cafe",
+        "café",
+        "coffee"
+      ],
+      "tags": [
+        "drink",
+        "dish",
+        "cafe",
+        "juice",
+        "breakfast restaurant",
+        "restaurant",
+        "cuban restaurant",
+        "bakery",
+        "dessert",
+        "american restaurant",
+        "latin american restaurant",
+        "pizza restaurant"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "furniture",
+      "label": "furniture",
+      "also_called": [],
+      "tags": [
+        "store",
+        "storage service",
+        "department store",
+        "home improvement store",
+        "plant",
+        "thrift store",
+        "discount store",
+        "home goods store",
+        "wholesaler"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "truck tire service",
+      "label": "truck tire service",
+      "also_called": [],
+      "tags": [
+        "shop",
+        "car repair and maintenance",
+        "suppliers"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "locksmith",
+      "label": "locksmith",
+      "also_called": [],
+      "tags": [],
+      "travels_to_customer": false
+    },
+    {
+      "key": "movers",
+      "label": "movers",
+      "also_called": [
+        "mover",
+        "moving company",
+        "moving",
+        "moving companies"
+      ],
+      "tags": [
+        "moving service",
+        "storage",
+        "storage service"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "party rental",
+      "label": "party rental",
+      "also_called": [],
+      "tags": [
+        "event venue",
+        "repair service",
+        "dish",
+        "drink",
+        "banquet hall",
+        "bouquet",
+        "caterer",
+        "wedding venue",
+        "clothing store",
+        "coworking space",
+        "furniture store",
+        "home improvement store"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "towing",
+      "label": "towing",
+      "also_called": [],
+      "tags": [
+        "car repair and maintenance service",
+        "tire shop",
+        "non profit organization",
+        "shipping service"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "event venue",
+      "label": "event venue",
+      "also_called": [],
+      "tags": [
+        "dish",
+        "drink",
+        "banquet hall",
+        "wedding",
+        "hotel",
+        "association organization",
+        "coworking space",
+        "restaurant",
+        "american restaurant",
+        "bar",
+        "bar grill",
+        "bowling alley"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "plumber",
+      "label": "plumber",
+      "also_called": [
+        "plumbing"
+      ],
+      "tags": [
+        "repair service",
+        "general contractor",
+        "electrician"
+      ],
+      "travels_to_customer": true
+    },
+    {
+      "key": "body shop",
+      "label": "body shop",
+      "also_called": [],
+      "tags": [
+        "car repair and maintenance service",
+        "auto parts store",
+        "tire"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "shipping and packing store",
+      "label": "shipping and packing store",
+      "also_called": [],
+      "tags": [
+        "service",
+        "moving service",
+        "manufacturer",
+        "mover",
+        "storage"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "dentist",
+      "label": "dentist",
+      "also_called": [],
+      "tags": [
+        "dental clinic",
+        "doctor",
+        "health",
+        "medical clinic"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "electrician",
+      "label": "electrician",
+      "also_called": [
+        "electrical"
+      ],
+      "tags": [
+        "repair service",
+        "general contractor",
+        "plumber"
+      ],
+      "travels_to_customer": true
+    },
+    {
+      "key": "appliance repair",
+      "label": "appliance repair",
+      "also_called": [],
+      "tags": [
+        "service",
+        "general contractor",
+        "plumber",
+        "electrician",
+        "home improvement store"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "phone repair",
+      "label": "phone repair",
+      "also_called": [],
+      "tags": [
+        "cell store",
+        "storage service",
+        "sandwich shop"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "real estate agent",
+      "label": "real estate agent",
+      "also_called": [],
+      "tags": [
+        "agency",
+        "consultant",
+        "general contractor"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "jewelry",
+      "label": "jewelry",
+      "also_called": [],
+      "tags": [
+        "store",
+        "wholesaler",
+        "department store",
+        "shoe store"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "car wash",
+      "label": "car wash",
+      "also_called": [],
+      "tags": [
+        "convenience store",
+        "gas station"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "notary",
+      "label": "notary",
+      "also_called": [],
+      "tags": [
+        "banking and finance",
+        "shipping service",
+        "consultant",
+        "insurance agency",
+        "real estate agency"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "urgent care",
+      "label": "urgent care",
+      "also_called": [],
+      "tags": [
+        "medical clinic",
+        "doctor",
+        "medical center"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "insurance agent",
+      "label": "insurance agent",
+      "also_called": [],
+      "tags": [
+        "agency",
+        "real estate agency"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "pool service",
+      "label": "pool service",
+      "also_called": [],
+      "tags": [
+        "cleaning",
+        "general contractor",
+        "sporting goods store",
+        "swimming"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "tutoring",
+      "label": "tutoring",
+      "also_called": [],
+      "tags": [
+        "educational institution",
+        "library",
+        "academic department",
+        "university",
+        "child care agency",
+        "elementary school",
+        "health",
+        "medical clinic",
+        "preschool",
+        "tourist information center"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "boat rental",
+      "label": "boat rental",
+      "also_called": [],
+      "tags": [
+        "tour agency",
+        "marina",
+        "fishing charter",
+        "restaurant",
+        "tourist attraction",
+        "travel agency",
+        "bar grill"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "accountant",
+      "label": "accountant",
+      "also_called": [],
+      "tags": [
+        "consultant",
+        "accounting",
+        "banking and finance"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "car rental",
+      "label": "car rental",
+      "also_called": [],
+      "tags": [
+        "agency",
+        "transportation service"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "garden center and nursery",
+      "label": "garden center and nursery",
+      "also_called": [],
+      "tags": [
+        "plant",
+        "home improvement store",
+        "farm",
+        "botanical",
+        "building materials store",
+        "hardware store"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "hvac",
+      "label": "hvac",
+      "also_called": [],
+      "tags": [
+        "general contractor",
+        "repair service",
+        "electrician",
+        "plumber"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "chiropractor",
+      "label": "chiropractor",
+      "also_called": [],
+      "tags": [
+        "medical clinic",
+        "physical therapist"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "jewelry and watch repair",
+      "label": "jewelry and watch repair",
+      "also_called": [],
+      "tags": [
+        "store",
+        "wholesaler"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "photographer",
+      "label": "photographer",
+      "also_called": [],
+      "tags": [
+        "electronics store",
+        "art museum",
+        "hair salon"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "music lessons",
+      "label": "music lessons",
+      "also_called": [],
+      "tags": [
+        "educational institution",
+        "school",
+        "sports school",
+        "association organization",
+        "indoor playground"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "physical therapy",
+      "label": "physical therapy",
+      "also_called": [],
+      "tags": [
+        "therapist",
+        "medical clinic",
+        "wellness center"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "wedding planner",
+      "label": "wedding planner",
+      "also_called": [],
+      "tags": [
+        "caterer",
+        "dish",
+        "venue"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "tattoo studio",
+      "label": "tattoo studio",
+      "also_called": [],
+      "tags": [
+        "body art service",
+        "jewelry store"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "travel agency",
+      "label": "travel agency",
+      "also_called": [],
+      "tags": [
+        "tour",
+        "banking and finance",
+        "local government office"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "septic and well service",
+      "label": "septic and well service",
+      "also_called": [],
+      "tags": [
+        "repair",
+        "plumber",
+        "general contractor",
+        "manufacturer",
+        "building materials store"
+      ],
+      "travels_to_customer": true
+    },
+    {
+      "key": "roofer",
+      "label": "roofer",
+      "also_called": [],
+      "tags": [
+        "roofing contractor",
+        "hair salon"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "tailor",
+      "label": "tailor",
+      "also_called": [],
+      "tags": [
+        "laundry",
+        "clothing store",
+        "plush toy"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "bike repair",
+      "label": "bike repair",
+      "also_called": [],
+      "tags": [
+        "bicycle store",
+        "hardware store",
+        "department store",
+        "car and maintenance service",
+        "moving service",
+        "sporting goods store",
+        "non profit organization"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "landscaping",
+      "label": "landscaping",
+      "also_called": [],
+      "tags": [
+        "garden center",
+        "general contractor",
+        "farm",
+        "building materials store",
+        "home improvement store",
+        "hardware store",
+        "roofing contractor"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "pressure washing",
+      "label": "pressure washing",
+      "also_called": [],
+      "tags": [
+        "car wash",
+        "cleaning service",
+        "manufacturer"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "dance studio",
+      "label": "dance studio",
+      "also_called": [],
+      "tags": [
+        "sports school",
+        "association organization",
+        "event venue",
+        "fitness center",
+        "sports complex"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "elder care and home care",
+      "label": "elder care and home care",
+      "also_called": [],
+      "tags": [
+        "health"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "auto glass",
+      "label": "auto glass",
+      "also_called": [],
+      "tags": [
+        "car repair and maintenance service"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "fishing charter and boat tours",
+      "label": "fishing charter and boat tours",
+      "also_called": [],
+      "tags": [
+        "agency"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "ice cream shop",
+      "label": "ice cream shop",
+      "also_called": [],
+      "tags": [
+        "american restaurant",
+        "fast food restaurant",
+        "dessert",
+        "coffee",
+        "juice",
+        "takeout restaurant"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "lawyer",
+      "label": "lawyer",
+      "also_called": [],
+      "tags": [
+        "consultant"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "mattress",
+      "label": "mattress",
+      "also_called": [],
+      "tags": [
+        "furniture store",
+        "storage service"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "tree service",
+      "label": "tree service",
+      "also_called": [],
+      "tags": [
+        "home improvement store"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "pet boarding",
+      "label": "pet boarding",
+      "also_called": [],
+      "tags": [
+        "care",
+        "service",
+        "veterinary care"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "yoga",
+      "label": "yoga",
+      "also_called": [],
+      "tags": [
+        "studio",
+        "health",
+        "gym"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "handyman",
+      "label": "handyman",
+      "also_called": [],
+      "tags": [
+        "repair service",
+        "general contractor",
+        "moving service"
+      ],
+      "travels_to_customer": true
+    },
+    {
+      "key": "window cleaning",
+      "label": "window cleaning",
+      "also_called": [],
+      "tags": [
+        "service",
+        "car wash",
+        "hardware store",
+        "laundry"
+      ],
+      "travels_to_customer": true
+    },
+    {
+      "key": "carpet cleaning",
+      "label": "carpet cleaning",
+      "also_called": [],
+      "tags": [
+        "service",
+        "repair service",
+        "general contractor",
+        "car wash",
+        "home improvement store",
+        "laundry",
+        "plumber"
+      ],
+      "travels_to_customer": true
+    },
+    {
+      "key": "driving school",
+      "label": "driving school",
+      "also_called": [],
+      "tags": [
+        "educational institution",
+        "college",
+        "local government office"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "dry cleaner",
+      "label": "dry cleaner",
+      "also_called": [],
+      "tags": [
+        "laundry"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "hardware store",
+      "label": "hardware store",
+      "also_called": [],
+      "tags": [
+        "home improvement",
+        "department",
+        "manufacturer",
+        "discount"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "windows and doors",
+      "label": "windows and doors",
+      "also_called": [],
+      "tags": [
+        "home improvement store",
+        "general contractor",
+        "car repair maintenance service",
+        "hardware store",
+        "suppliers",
+        "discount store",
+        "locksmith",
+        "roofing contractor"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "cleaning",
+      "label": "cleaning",
+      "also_called": [
+        "house cleaning",
+        "cleaning service",
+        "maid service",
+        "cleaners"
+      ],
+      "tags": [
+        "service",
+        "general contractor",
+        "laundry"
+      ],
+      "travels_to_customer": true
+    },
+    {
+      "key": "daycare",
+      "label": "daycare",
+      "also_called": [],
+      "tags": [
+        "child care agency",
+        "preschool",
+        "church",
+        "consultant",
+        "elementary school",
+        "health",
+        "school"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "car dealer",
+      "label": "car dealer",
+      "also_called": [],
+      "tags": [],
+      "travels_to_customer": false
+    },
+    {
+      "key": "thrift store",
+      "label": "thrift store",
+      "also_called": [],
+      "tags": [
+        "clothing",
+        "home improvement",
+        "non profit organization"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "garage door",
+      "label": "garage door",
+      "also_called": [],
+      "tags": [
+        "general contractor",
+        "home improvement store",
+        "suppliers",
+        "hardware store",
+        "electrician",
+        "locksmith"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "pet store",
+      "label": "pet store",
+      "also_called": [],
+      "tags": [
+        "plush toy",
+        "care",
+        "boarding service"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "funeral home",
+      "label": "funeral home",
+      "also_called": [],
+      "tags": [],
+      "travels_to_customer": false
+    },
+    {
+      "key": "butcher and seafood market",
+      "label": "butcher and seafood market",
+      "also_called": [],
+      "tags": [
+        "shop",
+        "grocery store",
+        "supermarket",
+        "food store"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "dog walking and pet sitting",
+      "label": "dog walking and pet sitting",
+      "also_called": [],
+      "tags": [
+        "care",
+        "boarding service",
+        "veterinary care"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "medical equipment rental",
+      "label": "medical equipment rental",
+      "also_called": [],
+      "tags": [
+        "health",
+        "association organization",
+        "car dealer",
+        "wholesaler"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "truck repair",
+      "label": "truck repair",
+      "also_called": [],
+      "tags": [
+        "car and maintenance service",
+        "auto parts store",
+        "tire shop",
+        "non profit organization"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "junk removal",
+      "label": "junk removal",
+      "also_called": [],
+      "tags": [
+        "moving service",
+        "general contractor"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "swim school",
+      "label": "swim school",
+      "also_called": [],
+      "tags": [
+        "sports",
+        "sports complex"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "bike and jet ski rental",
+      "label": "bike and jet ski rental",
+      "also_called": [],
+      "tags": [
+        "sports activity location"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "golf course",
+      "label": "golf course",
+      "also_called": [],
+      "tags": [
+        "association organization",
+        "indoor",
+        "restaurant",
+        "sports club"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "juice bar",
+      "label": "juice bar",
+      "also_called": [],
+      "tags": [
+        "shop",
+        "food",
+        "vegan restaurant"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "med spa",
+      "label": "med spa",
+      "also_called": [],
+      "tags": [
+        "beauty service",
+        "hair treatment",
+        "nails",
+        "beauty salon",
+        "medical clinic",
+        "doctor"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "cinema",
+      "label": "cinema",
+      "also_called": [],
+      "tags": [
+        "movie theater",
+        "shopping mall"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "general contractor",
+      "label": "general contractor",
+      "also_called": [],
+      "tags": [
+        "electrician",
+        "roofing"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "escape room",
+      "label": "escape room",
+      "also_called": [],
+      "tags": [
+        "amusement center"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "kids play center",
+      "label": "kids play center",
+      "also_called": [],
+      "tags": [
+        "indoor playground",
+        "amusement",
+        "amusement park"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "painter",
+      "label": "painter",
+      "also_called": [],
+      "tags": [
+        "general contractor"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "pest control",
+      "label": "pest control",
+      "also_called": [],
+      "tags": [
+        "home improvement store"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "meal prep",
+      "label": "meal prep",
+      "also_called": [],
+      "tags": [
+        "delivery",
+        "restaurant"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "tennis and sports courts",
+      "label": "tennis and sports courts",
+      "also_called": [],
+      "tags": [
+        "club"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "bowling and billiards",
+      "label": "bowling and billiards",
+      "also_called": [],
+      "tags": [
+        "alley"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "shooting range",
+      "label": "shooting range",
+      "also_called": [],
+      "tags": [
+        "sports complex",
+        "sporting goods store",
+        "sports activity location"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "babysitting and nanny agency",
+      "label": "babysitting and nanny agency",
+      "also_called": [],
+      "tags": [
+        "child care"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "specialty grocery and farmers market",
+      "label": "specialty grocery and farmers market",
+      "also_called": [],
+      "tags": [
+        "store"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "computer repair",
+      "label": "computer repair",
+      "also_called": [],
+      "tags": [],
+      "travels_to_customer": false
+    },
+    {
+      "key": "kids sports and activities",
+      "label": "kids sports and activities",
+      "also_called": [],
+      "tags": [
+        "child care agency",
+        "health",
+        "club",
+        "summer camp organizer"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "martial arts",
+      "label": "martial arts",
+      "also_called": [],
+      "tags": [
+        "sports school"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "taxi and transfer service",
+      "label": "taxi and transfer service",
+      "also_called": [],
+      "tags": [
+        "airport shuttle",
+        "chauffeur",
+        "transportation"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "shoe repair",
+      "label": "shoe repair",
+      "also_called": [],
+      "tags": [
+        "store"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "museum",
+      "label": "museum",
+      "also_called": [],
+      "tags": [],
+      "travels_to_customer": false
+    },
+    {
+      "key": "aquarium",
+      "label": "aquarium",
+      "also_called": [],
+      "tags": [],
+      "travels_to_customer": false
+    },
+    {
+      "key": "butcher",
+      "label": "butcher",
+      "also_called": [],
+      "tags": [
+        "grocery store"
+      ],
+      "travels_to_customer": false
+    },
+    {
+      "key": "motel",
+      "label": "motel",
+      "also_called": [],
+      "tags": [],
+      "travels_to_customer": false
+    },
+    {
+      "key": "transportation service",
+      "label": "transportation service",
+      "also_called": [],
+      "tags": [],
+      "travels_to_customer": false
+    }
+  ]
+}

@@ -1,0 +1,1219 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/sudzikcoin/versum-agent-assistant/main/schema/card.schema.json",
+  "title": "Versum business card",
+  "description": "The card get_card returns on the Versum MCP door (https://versum.suverse.io/mcp/catalog). Inferred from live cards of every family (restaurant, florist, shop, booking, quote, live Shopify and Square) on 2026-11-02; fields marked required were present on every one of them.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "The card id (UUID); pass it to get_card."
+    },
+    "name": {
+      "type": "string",
+      "description": "The business name."
+    },
+    "chain": {
+      "type": "boolean"
+    },
+    "marketplace": {
+      "type": "boolean"
+    },
+    "niche": {
+      "type": "string"
+    },
+    "niche_decided_by": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "source": {
+          "type": "string"
+        },
+        "reason": {
+          "type": "string"
+        },
+        "off_niche": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "source",
+        "reason",
+        "off_niche"
+      ]
+    },
+    "google_type": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "type",
+        "name",
+        "source"
+      ]
+    },
+    "address": {
+      "type": "string"
+    },
+    "location": {
+      "type": "object",
+      "properties": {
+        "lat": {
+          "type": "number"
+        },
+        "lng": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "lat",
+        "lng"
+      ]
+    },
+    "miles_away": {
+      "type": "null"
+    },
+    "phone": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "email": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "website": {
+      "type": "string"
+    },
+    "platform": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "timezone": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "hours": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "days": {
+          "type": "object",
+          "properties": {
+            "fri": {
+              "type": "object"
+            },
+            "mon": {
+              "type": "object"
+            },
+            "sat": {
+              "type": "object"
+            },
+            "sun": {
+              "type": "object"
+            },
+            "thu": {
+              "type": "object"
+            },
+            "tue": {
+              "type": "object"
+            },
+            "wed": {
+              "type": "object"
+            }
+          },
+          "required": [
+            "fri",
+            "mon",
+            "sat",
+            "sun",
+            "thu",
+            "tue",
+            "wed"
+          ]
+        },
+        "quote": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string"
+        },
+        "friday": {
+          "type": "string"
+        },
+        "monday": {
+          "type": "string"
+        },
+        "sunday": {
+          "type": "string"
+        },
+        "tuesday": {
+          "type": "string"
+        },
+        "saturday": {
+          "type": "string"
+        },
+        "thursday": {
+          "type": "string"
+        },
+        "wednesday": {
+          "type": "string"
+        },
+        "openNow": {
+          "type": "boolean"
+        },
+        "periods": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "weekdayDescriptions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "description": "Opening hours as read; hours_folded is the same in a few lines."
+    },
+    "hours_folded": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "support_chat": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "provider": {
+          "type": "string"
+        },
+        "has_ai": {
+          "type": "boolean"
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "provider",
+        "has_ai",
+        "note"
+      ]
+    },
+    "offerings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "category": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "tags": {
+            "type": "array"
+          },
+          "price": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "price_max": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "price_type": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "unit": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "quantity": {
+            "type": "null"
+          },
+          "currency": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "price_note": {
+            "type": "string"
+          },
+          "price_doubt": {
+            "type": [
+              "null",
+              "object"
+            ]
+          },
+          "seasonal": {
+            "type": [
+              "null",
+              "object"
+            ]
+          },
+          "duration_min": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "availability": {
+            "type": "string"
+          },
+          "image": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "url": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "action_url": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "staff": {
+            "type": "array"
+          },
+          "variants": {
+            "type": "array"
+          },
+          "source": {
+            "type": "string"
+          },
+          "evidence": {
+            "type": [
+              "null",
+              "object"
+            ]
+          },
+          "read_at": {
+            "type": "string"
+          },
+          "item_kind": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "occasion": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "occasion_special": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "is_main": {
+            "type": "boolean"
+          },
+          "occasion_offtopic": {
+            "type": "boolean"
+          },
+          "kind_ok": {
+            "type": "null"
+          },
+          "price_state": {
+            "type": "object"
+          },
+          "availability_state": {
+            "type": "object"
+          },
+          "properties": {
+            "type": "array"
+          },
+          "matched_by_purpose": {
+            "type": "boolean"
+          },
+          "link": {
+            "type": "string"
+          },
+          "link_via": {
+            "type": "string"
+          },
+          "phone": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "kind",
+          "title",
+          "description",
+          "category",
+          "tags",
+          "price",
+          "price_max",
+          "price_type",
+          "unit",
+          "quantity",
+          "currency",
+          "price_note",
+          "price_doubt",
+          "seasonal",
+          "duration_min",
+          "availability",
+          "image",
+          "url",
+          "action_url",
+          "staff",
+          "variants",
+          "source",
+          "evidence",
+          "read_at",
+          "item_kind",
+          "occasion",
+          "occasion_special",
+          "is_main",
+          "occasion_offtopic",
+          "kind_ok",
+          "price_state",
+          "availability_state",
+          "properties",
+          "matched_by_purpose",
+          "link",
+          "link_via",
+          "phone"
+        ]
+      },
+      "description": "What the business sells or offers: items, dishes, services, each with its own id, price and link."
+    },
+    "offerings_summary": {
+      "type": "object",
+      "properties": {
+        "total": {
+          "type": "number"
+        },
+        "matched": {
+          "type": "number"
+        },
+        "with_a_price": {
+          "type": "number"
+        },
+        "price_on_request": {
+          "type": "number"
+        },
+        "price_range": {
+          "type": [
+            "null",
+            "object"
+          ],
+          "properties": {
+            "min": {
+              "type": "number"
+            },
+            "max": {
+              "type": "number"
+            },
+            "currency": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "min",
+            "max",
+            "currency"
+          ]
+        },
+        "categories": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "kinds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "total",
+        "matched",
+        "with_a_price",
+        "price_on_request",
+        "price_range",
+        "categories",
+        "kinds"
+      ]
+    },
+    "actions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "available": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "method": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "url": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "provider": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "required_fields": {
+            "type": "array"
+          },
+          "fields_source": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "alternatives": {
+            "type": "array"
+          },
+          "note": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "source": {
+            "type": "string"
+          },
+          "evidence": {
+            "type": [
+              "null",
+              "object"
+            ]
+          },
+          "url_from": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "phone": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "state": {
+            "type": "object"
+          },
+          "read_at": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "available",
+          "method",
+          "url",
+          "provider",
+          "required_fields",
+          "fields_source",
+          "alternatives",
+          "note",
+          "source",
+          "evidence",
+          "url_from",
+          "phone",
+          "state",
+          "read_at"
+        ]
+      },
+      "description": "The doors: what can be done and where (order, book, reserve, request_quote, contact, check_delivery), each with a real URL."
+    },
+    "fulfillment": {
+      "type": "object",
+      "properties": {
+        "delivery": {
+          "type": "object",
+          "properties": {
+            "ok": {
+              "type": "boolean"
+            },
+            "how": {
+              "type": "string"
+            },
+            "why": {
+              "type": "string"
+            },
+            "available": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "zone": {
+              "type": "null"
+            },
+            "state": {
+              "type": "object"
+            },
+            "price": {
+              "type": "null"
+            },
+            "note": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            "source": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            "evidence": {
+              "type": [
+                "null",
+                "object"
+              ]
+            },
+            "order_deadline": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "ok",
+            "how",
+            "why",
+            "available",
+            "zone",
+            "state",
+            "price",
+            "note",
+            "source",
+            "evidence",
+            "order_deadline"
+          ]
+        },
+        "pickup": {
+          "type": "object",
+          "properties": {
+            "ok": {
+              "type": "boolean"
+            },
+            "how": {
+              "type": "string"
+            },
+            "why": {
+              "type": "string"
+            },
+            "available": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "zone": {
+              "type": "null"
+            },
+            "state": {
+              "type": "object"
+            },
+            "price": {
+              "type": "null"
+            },
+            "note": {
+              "type": "null"
+            },
+            "source": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            "evidence": {
+              "type": [
+                "null",
+                "object"
+              ]
+            },
+            "order_deadline": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "ok",
+            "how",
+            "why",
+            "available",
+            "zone",
+            "state",
+            "price",
+            "note",
+            "source",
+            "evidence",
+            "order_deadline"
+          ]
+        },
+        "on_site": {
+          "type": "object",
+          "properties": {
+            "ok": {
+              "type": "boolean"
+            },
+            "how": {
+              "type": "string"
+            },
+            "why": {
+              "type": "string"
+            },
+            "available": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "zone": {
+              "type": "null"
+            },
+            "state": {
+              "type": "object"
+            },
+            "price": {
+              "type": "null"
+            },
+            "note": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            "source": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            "evidence": {
+              "type": [
+                "null",
+                "object"
+              ]
+            },
+            "order_deadline": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "ok",
+            "how",
+            "why",
+            "available",
+            "zone",
+            "state",
+            "price",
+            "note",
+            "source",
+            "evidence",
+            "order_deadline"
+          ]
+        },
+        "at_customer": {
+          "type": "object",
+          "properties": {
+            "ok": {
+              "type": "boolean"
+            },
+            "how": {
+              "type": "string"
+            },
+            "why": {
+              "type": "string"
+            },
+            "available": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "zone": {
+              "type": "null"
+            },
+            "state": {
+              "type": "object"
+            },
+            "price": {
+              "type": "null"
+            },
+            "note": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            "source": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            "evidence": {
+              "type": [
+                "null",
+                "object"
+              ]
+            },
+            "order_deadline": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "ok",
+            "how",
+            "why",
+            "available",
+            "zone",
+            "state",
+            "price",
+            "note",
+            "source",
+            "evidence",
+            "order_deadline"
+          ]
+        }
+      },
+      "required": [
+        "delivery",
+        "pickup",
+        "on_site",
+        "at_customer"
+      ],
+      "description": "Delivery, pickup and the other ways the business hands over, with what is known and what is not."
+    },
+    "properties": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "key": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          },
+          "value_num": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "unit": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "quote": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "url": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "read_at": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "key",
+          "name",
+          "value",
+          "value_num",
+          "unit",
+          "quote",
+          "url",
+          "source",
+          "read_at"
+        ]
+      }
+    },
+    "property_states": {
+      "type": "object",
+      "properties": {}
+    },
+    "established_keys": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "unknown": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "freshness": {
+      "type": "object",
+      "properties": {
+        "read_at": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "stale": {
+          "type": "boolean"
+        },
+        "offerings_read_at": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "card_read_at": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "days_old": {
+          "type": [
+            "null",
+            "number"
+          ]
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "read_at",
+        "stale",
+        "offerings_read_at",
+        "card_read_at",
+        "days_old",
+        "note"
+      ],
+      "description": "When the site and the offerings were read."
+    },
+    "verdict": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "description": "add or reject: whether the card is on the shelf, with verdict_reason."
+    },
+    "status": {
+      "type": "string",
+      "description": "unverified (read from the business's public pages; the owner has not confirmed) or owner_verified.",
+      "enum": [
+        "unverified",
+        "owner_verified"
+      ]
+    },
+    "status_note": {
+      "type": "string"
+    },
+    "matched_on": {
+      "type": "array"
+    },
+    "why_matched": {
+      "type": "string"
+    },
+    "similarity": {
+      "type": "object",
+      "properties": {
+        "offering": {
+          "type": "null"
+        },
+        "trade": {
+          "type": "null"
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "offering",
+        "trade",
+        "note"
+      ]
+    },
+    "ranking": {
+      "type": "null"
+    },
+    "verdict_reason": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "box_candidate": {
+      "type": "boolean"
+    },
+    "established_properties": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "key": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "value_type": {
+            "type": "string"
+          },
+          "unit": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "businesses": {
+            "type": "number"
+          },
+          "offerings": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "key",
+          "label",
+          "value_type",
+          "unit",
+          "businesses",
+          "offerings"
+        ]
+      }
+    },
+    "read_by": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "reach": {
+      "type": "string",
+      "description": "How an agent can deal with this business: online_platform | own_cart | form_only | phone_only | no_site | not_read.",
+      "enum": [
+        "online_platform",
+        "own_cart",
+        "form_only",
+        "phone_only",
+        "no_site",
+        "not_read"
+      ]
+    },
+    "platforms": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Platforms recognised on the site (shop, ordering, booking)."
+    },
+    "live_data": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "platform": {
+          "type": "string"
+        },
+        "synced_at": {
+          "type": "string"
+        },
+        "trust": {
+          "type": "string"
+        },
+        "sandbox": {
+          "type": "boolean"
+        },
+        "timezone": {
+          "type": "string"
+        },
+        "doors": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "platform",
+        "synced_at",
+        "trust",
+        "sandbox",
+        "timezone",
+        "doors",
+        "note"
+      ],
+      "description": "Present when the owner connected Shopify or Square: the card is synced from the store."
+    },
+    "page_url": {
+      "type": "string",
+      "description": "The business page on versum.suverse.io (/b/{slug})."
+    },
+    "cannot": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string"
+          },
+          "method": {
+            "type": "string"
+          },
+          "platform": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "action",
+          "method",
+          "platform",
+          "reason"
+        ]
+      }
+    },
+    "took_ms": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "chain",
+    "marketplace",
+    "niche",
+    "niche_decided_by",
+    "google_type",
+    "address",
+    "location",
+    "miles_away",
+    "phone",
+    "email",
+    "website",
+    "platform",
+    "timezone",
+    "hours",
+    "hours_folded",
+    "support_chat",
+    "offerings",
+    "offerings_summary",
+    "actions",
+    "fulfillment",
+    "properties",
+    "property_states",
+    "established_keys",
+    "unknown",
+    "freshness",
+    "verdict",
+    "status",
+    "status_note",
+    "matched_on",
+    "why_matched",
+    "similarity",
+    "ranking",
+    "verdict_reason",
+    "box_candidate",
+    "established_properties",
+    "read_by",
+    "reach",
+    "live_data",
+    "page_url",
+    "took_ms"
+  ]
+}

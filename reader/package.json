@@ -1,0 +1,40 @@
+{
+  "name": "@suverselabs/versum-reader",
+  "version": "0.1.0",
+  "description": "Read any business website into a card an AI agent can act on: items with prices, doors (order, book, reserve, quote, call, email), hours, contacts — every value with its quote. Versum's own open reader.",
+  "license": "MIT",
+  "author": "SuVerse LLC",
+  "homepage": "https://versum.suverse.io",
+  "type": "commonjs",
+  "main": "dist/index.cjs",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "versum-reader": "dist/cli.cjs"
+  },
+  "files": [
+    "dist",
+    "data",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "bash scripts/build.sh",
+    "test": "node --test test/*.test.cjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.127.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "typescript": "^5.6.0",
+    "@types/node": "^22.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sudzikcoin/versum-agent-assistant.git",
+    "directory": "reader"
+  }
+}

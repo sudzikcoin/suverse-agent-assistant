@@ -1,0 +1,1577 @@
+{
+ "taken_at": "2026-11-02T10:25:38.884Z",
+ "platforms": [
+  {
+   "key": "abcapp",
+   "label": "ABC Salon app",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "acuity",
+   "label": "Acuity Scheduling",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "aloha",
+   "label": "NCR Aloha Online Ordering",
+   "kind": "ordering",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "areservation",
+   "label": "aReservation",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "bentobox",
+   "label": "BentoBox",
+   "kind": "site",
+   "transacts": false,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "beyondmenu",
+   "label": "BeyondMenu",
+   "kind": "ordering",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "bigcommerce",
+   "label": "BigCommerce",
+   "kind": "store",
+   "transacts": true,
+   "site_engine": true,
+   "aliases": []
+  },
+  {
+   "key": "bloomnation",
+   "label": "BloomNation",
+   "kind": "store",
+   "transacts": true,
+   "site_engine": true,
+   "aliases": []
+  },
+  {
+   "key": "bookedby",
+   "label": "BookedBy",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "bookeo",
+   "label": "Bookeo",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "booker",
+   "label": "Booker",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "booksy",
+   "label": "Booksy",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "boulevard",
+   "label": "Boulevard",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "calendly",
+   "label": "Calendly",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "cardfoundry",
+   "label": "CardFoundry",
+   "kind": "gift_card",
+   "transacts": false,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "cashstar",
+   "label": "CashStar",
+   "kind": "gift_card",
+   "transacts": false,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "checkcherry",
+   "label": "Check Cherry",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "chownow",
+   "label": "ChowNow",
+   "kind": "ordering",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "clover",
+   "label": "Clover",
+   "kind": "ordering",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "daysmart",
+   "label": "DaySmart",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "dental4me",
+   "label": "Dental4.me",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "doordash",
+   "label": "DoorDash",
+   "kind": "marketplace",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "ecwid",
+   "label": "Ecwid",
+   "kind": "store",
+   "transacts": true,
+   "site_engine": true,
+   "aliases": []
+  },
+  {
+   "key": "eventrentalsystems",
+   "label": "Event Rental Systems",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "ezcater",
+   "label": "ezCater",
+   "kind": "marketplace",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "ezordernow",
+   "label": "EZ Order Now",
+   "kind": "ordering",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "facebook",
+   "label": "Facebook",
+   "kind": "social",
+   "transacts": false,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "fareharbor",
+   "label": "FareHarbor",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "floranext",
+   "label": "Floranext",
+   "kind": "store",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "foodbooking",
+   "label": "FoodBooking (GloriaFood)",
+   "kind": "ordering",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "formsite",
+   "label": "Formsite",
+   "kind": "forms",
+   "transacts": false,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "formspree",
+   "label": "Formspree",
+   "kind": "forms",
+   "transacts": false,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "formstack",
+   "label": "Formstack",
+   "kind": "forms",
+   "transacts": false,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "fresha",
+   "label": "Fresha",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "froogle",
+   "label": "Froogle Online",
+   "kind": "ordering",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "givex",
+   "label": "Givex",
+   "kind": "gift_card",
+   "transacts": false,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "gloriafood",
+   "label": "GloriaFood",
+   "kind": "ordering",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "glossgenius",
+   "label": "GlossGenius",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "gocheckin",
+   "label": "GoCheckin",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "godaddy",
+   "label": "GoDaddy",
+   "kind": "site",
+   "transacts": false,
+   "site_engine": true,
+   "aliases": []
+  },
+  {
+   "key": "google_calendar",
+   "label": "Google Calendar appointments",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "google_forms",
+   "label": "Google Forms",
+   "kind": "forms",
+   "transacts": false,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "granbury",
+   "label": "Granbury Restaurant Solutions",
+   "kind": "ordering",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "gravityfree",
+   "label": "GravityFree",
+   "kind": "store",
+   "transacts": true,
+   "site_engine": true,
+   "aliases": []
+  },
+  {
+   "key": "grubhub",
+   "label": "Grubhub",
+   "kind": "marketplace",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "housecall_pro",
+   "label": "Housecall Pro",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "incentivio",
+   "label": "Incentivio",
+   "kind": "ordering",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "instagram",
+   "label": "Instagram",
+   "kind": "social",
+   "transacts": false,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "jane",
+   "label": "Jane",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "jobber",
+   "label": "Jobber",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "joomla",
+   "label": "Joomla",
+   "kind": "site",
+   "transacts": false,
+   "site_engine": true,
+   "aliases": []
+  },
+  {
+   "key": "jotform",
+   "label": "Jotform",
+   "kind": "forms",
+   "transacts": false,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "launch27",
+   "label": "Launch27",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "linktree",
+   "label": "Linktree",
+   "kind": "social",
+   "transacts": false,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "macmarketing",
+   "label": "MAC Marketing booking",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "mangomint",
+   "label": "Mangomint",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "massagebook",
+   "label": "MassageBook",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "mealkeyway",
+   "label": "MealKeyway",
+   "kind": "ordering",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "meevo",
+   "label": "Meevo",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "menufy",
+   "label": "Menufy",
+   "kind": "ordering",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "menupages",
+   "label": "MenuPages",
+   "kind": "marketplace",
+   "transacts": false,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "mindbody",
+   "label": "Mindbody",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "miva",
+   "label": "Miva",
+   "kind": "store",
+   "transacts": true,
+   "site_engine": true,
+   "aliases": []
+  },
+  {
+   "key": "modento",
+   "label": "Modento",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "moego",
+   "label": "MoeGo",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "nexhealth",
+   "label": "NexHealth",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "nextdoor",
+   "label": "Nextdoor",
+   "kind": "social",
+   "transacts": false,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "olo",
+   "label": "Olo",
+   "kind": "ordering",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "opentable",
+   "label": "OpenTable",
+   "kind": "reservation",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "order_store",
+   "label": "order.store",
+   "kind": "ordering",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "orderonline",
+   "label": "OrderOnline",
+   "kind": "ordering",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "orderorbook",
+   "label": "OrderOrBook",
+   "kind": "ordering",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "owner",
+   "label": "Owner.com",
+   "kind": "ordering",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "payhip",
+   "label": "Payhip",
+   "kind": "store",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "peek",
+   "label": "Peek",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "phorest",
+   "label": "Phorest",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "popmenu",
+   "label": "Popmenu",
+   "kind": "site",
+   "transacts": false,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "porch",
+   "label": "Porch",
+   "kind": "leads",
+   "transacts": false,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "resy",
+   "label": "Resy",
+   "kind": "reservation",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "roller",
+   "label": "ROLLER",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "sauce",
+   "label": "Sauce",
+   "kind": "ordering",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "schedulicity",
+   "label": "Schedulicity",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "servicetitan",
+   "label": "ServiceTitan",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "setmore",
+   "label": "Setmore",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "sevenrooms",
+   "label": "SevenRooms",
+   "kind": "reservation",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "shopify",
+   "label": "Shopify",
+   "kind": "store",
+   "transacts": true,
+   "site_engine": true,
+   "aliases": []
+  },
+  {
+   "key": "showit",
+   "label": "Showit",
+   "kind": "site",
+   "transacts": false,
+   "site_engine": true,
+   "aliases": []
+  },
+  {
+   "key": "skipthedishes",
+   "label": "SkipTheDishes",
+   "kind": "marketplace",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "skytab",
+   "label": "SkyTab",
+   "kind": "ordering",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "slice",
+   "label": "Slice",
+   "kind": "ordering",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "slicelife",
+   "label": "Slice",
+   "kind": "marketplace",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "smartonlineorder",
+   "label": "SmartOnlineOrder",
+   "kind": "ordering",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "snackpass",
+   "label": "Snackpass",
+   "kind": "ordering",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "spothopper",
+   "label": "SpotHopper",
+   "kind": "ordering",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "spoton",
+   "label": "SpotOn",
+   "kind": "ordering",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "square",
+   "label": "Square",
+   "kind": "ordering",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "square_appointments",
+   "label": "Square Appointments",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "square_online",
+   "label": "Square Online",
+   "kind": "store",
+   "transacts": true,
+   "site_engine": true,
+   "aliases": []
+  },
+  {
+   "key": "squarespace",
+   "label": "Squarespace",
+   "kind": "site",
+   "transacts": false,
+   "site_engine": true,
+   "aliases": []
+  },
+  {
+   "key": "styleseat",
+   "label": "StyleSeat",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "teeitup",
+   "label": "TeeItUp",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "thanx",
+   "label": "Thanx",
+   "kind": "loyalty",
+   "transacts": false,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "thecut",
+   "label": "theCut",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "thumbtack",
+   "label": "Thumbtack",
+   "kind": "leads",
+   "transacts": false,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "tidycal",
+   "label": "TidyCal",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "tiktok",
+   "label": "TikTok",
+   "kind": "social",
+   "transacts": false,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "toast",
+   "label": "Toast",
+   "kind": "ordering",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "toasttab",
+   "label": "Toast",
+   "kind": "ordering",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "tock",
+   "label": "Tock",
+   "kind": "reservation",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "tripleseat",
+   "label": "Tripleseat",
+   "kind": "reservation",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "ubereats",
+   "label": "Uber Eats",
+   "kind": "marketplace",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": [
+    "postmates"
+   ]
+  },
+  {
+   "key": "vagaro",
+   "label": "Vagaro",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "vcita",
+   "label": "vcita",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "weave",
+   "label": "Weave",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "webflow",
+   "label": "Webflow",
+   "kind": "site",
+   "transacts": false,
+   "site_engine": true,
+   "aliases": []
+  },
+  {
+   "key": "whatsapp",
+   "label": "WhatsApp",
+   "kind": "social",
+   "transacts": false,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "wix",
+   "label": "Wix",
+   "kind": "site",
+   "transacts": false,
+   "site_engine": true,
+   "aliases": []
+  },
+  {
+   "key": "woocommerce",
+   "label": "WooCommerce",
+   "kind": "store",
+   "transacts": true,
+   "site_engine": true,
+   "aliases": []
+  },
+  {
+   "key": "wordpress",
+   "label": "WordPress",
+   "kind": "site",
+   "transacts": false,
+   "site_engine": true,
+   "aliases": []
+  },
+  {
+   "key": "xola",
+   "label": "Xola",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "yelp",
+   "label": "Yelp",
+   "kind": "social",
+   "transacts": false,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "youtube",
+   "label": "YouTube",
+   "kind": "social",
+   "transacts": false,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "zenoti",
+   "label": "Zenoti",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  },
+  {
+   "key": "zocdoc",
+   "label": "Zocdoc",
+   "kind": "booking",
+   "transacts": true,
+   "site_engine": false,
+   "aliases": []
+  }
+ ],
+ "domains": [
+  {
+   "domain": "abcapp.us",
+   "platform": "abcapp"
+  },
+  {
+   "domain": "acuityscheduling.com",
+   "platform": "acuity"
+  },
+  {
+   "domain": "alohaorderonline.com",
+   "platform": "aloha"
+  },
+  {
+   "domain": "amazonaws.com",
+   "platform": null
+  },
+  {
+   "domain": "areservation.com",
+   "platform": "areservation"
+  },
+  {
+   "domain": "as.me",
+   "platform": "acuity"
+  },
+  {
+   "domain": "b-cdn.net",
+   "platform": null
+  },
+  {
+   "domain": "bit.ly",
+   "platform": null
+  },
+  {
+   "domain": "bloomnation.com",
+   "platform": "bloomnation"
+  },
+  {
+   "domain": "blvd.app",
+   "platform": "boulevard"
+  },
+  {
+   "domain": "bookedby.com",
+   "platform": "bookedby"
+  },
+  {
+   "domain": "bookeo.com",
+   "platform": "bookeo"
+  },
+  {
+   "domain": "booker.com",
+   "platform": "booker"
+  },
+  {
+   "domain": "booksy.com",
+   "platform": "booksy"
+  },
+  {
+   "domain": "boulevard.io",
+   "platform": "boulevard"
+  },
+  {
+   "domain": "calendar.app.google",
+   "platform": "google_calendar"
+  },
+  {
+   "domain": "calendar.google.com",
+   "platform": "google_calendar"
+  },
+  {
+   "domain": "calendly.com",
+   "platform": "calendly"
+  },
+  {
+   "domain": "cardfoundry.com",
+   "platform": "cardfoundry"
+  },
+  {
+   "domain": "cashstar.com",
+   "platform": "cashstar"
+  },
+  {
+   "domain": "checkcherry.com",
+   "platform": "checkcherry"
+  },
+  {
+   "domain": "chownow.com",
+   "platform": "chownow"
+  },
+  {
+   "domain": "clover.com",
+   "platform": "clover"
+  },
+  {
+   "domain": "cloveronline.com",
+   "platform": "clover"
+  },
+  {
+   "domain": "company.site",
+   "platform": "ecwid"
+  },
+  {
+   "domain": "daysmart.com",
+   "platform": "daysmart"
+  },
+  {
+   "domain": "dental4.me",
+   "platform": "dental4me"
+  },
+  {
+   "domain": "docs.google.com",
+   "platform": "google_forms"
+  },
+  {
+   "domain": "doordash.com",
+   "platform": "doordash"
+  },
+  {
+   "domain": "ecwid.com",
+   "platform": "ecwid"
+  },
+  {
+   "domain": "editmysite.com",
+   "platform": "square_online"
+  },
+  {
+   "domain": "eventrentalsystems.com",
+   "platform": "eventrentalsystems"
+  },
+  {
+   "domain": "exploretock.com",
+   "platform": "tock"
+  },
+  {
+   "domain": "ezcater.com",
+   "platform": "ezcater"
+  },
+  {
+   "domain": "ezordernow.com",
+   "platform": "ezordernow"
+  },
+  {
+   "domain": "facebook.com",
+   "platform": "facebook"
+  },
+  {
+   "domain": "fareharbor.com",
+   "platform": "fareharbor"
+  },
+  {
+   "domain": "fb.com",
+   "platform": "facebook"
+  },
+  {
+   "domain": "floranext.com",
+   "platform": "floranext"
+  },
+  {
+   "domain": "forms.gle",
+   "platform": "google_forms"
+  },
+  {
+   "domain": "formsite.com",
+   "platform": "formsite"
+  },
+  {
+   "domain": "formspree.io",
+   "platform": "formspree"
+  },
+  {
+   "domain": "formstack.com",
+   "platform": "formstack"
+  },
+  {
+   "domain": "fresha.com",
+   "platform": "fresha"
+  },
+  {
+   "domain": "froogleonline.io",
+   "platform": "froogle"
+  },
+  {
+   "domain": "getbento.com",
+   "platform": "bentobox"
+  },
+  {
+   "domain": "getjobber.com",
+   "platform": "jobber"
+  },
+  {
+   "domain": "getsauce.com",
+   "platform": "sauce"
+  },
+  {
+   "domain": "getsqr.co",
+   "platform": "square"
+  },
+  {
+   "domain": "getweave.com",
+   "platform": "weave"
+  },
+  {
+   "domain": "givex.com",
+   "platform": "givex"
+  },
+  {
+   "domain": "glossgenius.com",
+   "platform": "glossgenius"
+  },
+  {
+   "domain": "gocheckin.net",
+   "platform": "gocheckin"
+  },
+  {
+   "domain": "godaddysites.com",
+   "platform": "godaddy"
+  },
+  {
+   "domain": "goo.gl",
+   "platform": null
+  },
+  {
+   "domain": "google.com",
+   "platform": null
+  },
+  {
+   "domain": "granburyrs.com",
+   "platform": "granbury"
+  },
+  {
+   "domain": "grubhub.com",
+   "platform": "grubhub"
+  },
+  {
+   "domain": "housecallpro.com",
+   "platform": "housecall_pro"
+  },
+  {
+   "domain": "incentivio.com",
+   "platform": "incentivio"
+  },
+  {
+   "domain": "instagram.com",
+   "platform": "instagram"
+  },
+  {
+   "domain": "janeapp.com",
+   "platform": "jane"
+  },
+  {
+   "domain": "joinblvd.com",
+   "platform": "boulevard"
+  },
+  {
+   "domain": "jotform.com",
+   "platform": "jotform"
+  },
+  {
+   "domain": "launch27.com",
+   "platform": "launch27"
+  },
+  {
+   "domain": "linktr.ee",
+   "platform": "linktree"
+  },
+  {
+   "domain": "m.me",
+   "platform": "facebook"
+  },
+  {
+   "domain": "macmarketing.us",
+   "platform": "macmarketing"
+  },
+  {
+   "domain": "mangomint.com",
+   "platform": "mangomint"
+  },
+  {
+   "domain": "massagebook.com",
+   "platform": "massagebook"
+  },
+  {
+   "domain": "mealkeyway.com",
+   "platform": "mealkeyway"
+  },
+  {
+   "domain": "meevo.com",
+   "platform": "meevo"
+  },
+  {
+   "domain": "menufy.com",
+   "platform": "menufy"
+  },
+  {
+   "domain": "mindbody.io",
+   "platform": "mindbody"
+  },
+  {
+   "domain": "mindbodyonline.com",
+   "platform": "mindbody"
+  },
+  {
+   "domain": "modento.io",
+   "platform": "modento"
+  },
+  {
+   "domain": "moego.pet",
+   "platform": "moego"
+  },
+  {
+   "domain": "mybigcommerce.com",
+   "platform": "bigcommerce"
+  },
+  {
+   "domain": "myshopify.com",
+   "platform": "shopify"
+  },
+  {
+   "domain": "nexhealth.com",
+   "platform": "nexhealth"
+  },
+  {
+   "domain": "nextdoor.com",
+   "platform": "nextdoor"
+  },
+  {
+   "domain": "olo.com",
+   "platform": "olo"
+  },
+  {
+   "domain": "olo.express",
+   "platform": "olo"
+  },
+  {
+   "domain": "opentable.com",
+   "platform": "opentable"
+  },
+  {
+   "domain": "order.online",
+   "platform": "doordash"
+  },
+  {
+   "domain": "order.store",
+   "platform": "order_store"
+  },
+  {
+   "domain": "payhip.com",
+   "platform": "payhip"
+  },
+  {
+   "domain": "peek.com",
+   "platform": "peek"
+  },
+  {
+   "domain": "phorest.com",
+   "platform": "phorest"
+  },
+  {
+   "domain": "phorestcdn.com",
+   "platform": "phorest"
+  },
+  {
+   "domain": "popmenu.com",
+   "platform": "popmenu"
+  },
+  {
+   "domain": "porch.com",
+   "platform": "porch"
+  },
+  {
+   "domain": "postmates.com",
+   "platform": "ubereats"
+  },
+  {
+   "domain": "resy.com",
+   "platform": "resy"
+  },
+  {
+   "domain": "roller.app",
+   "platform": "roller"
+  },
+  {
+   "domain": "schedulicity.com",
+   "platform": "schedulicity"
+  },
+  {
+   "domain": "seamless.com",
+   "platform": "grubhub"
+  },
+  {
+   "domain": "servicetitan.com",
+   "platform": "servicetitan"
+  },
+  {
+   "domain": "setmore.com",
+   "platform": "setmore"
+  },
+  {
+   "domain": "sevenrooms.com",
+   "platform": "sevenrooms"
+  },
+  {
+   "domain": "shop.app",
+   "platform": "shopify"
+  },
+  {
+   "domain": "shopify.com",
+   "platform": "shopify"
+  },
+  {
+   "domain": "showit.site",
+   "platform": "showit"
+  },
+  {
+   "domain": "skytab.com",
+   "platform": "skytab"
+  },
+  {
+   "domain": "slicelife.com",
+   "platform": "slice"
+  },
+  {
+   "domain": "smartonlineorder.com",
+   "platform": "smartonlineorder"
+  },
+  {
+   "domain": "snackpass.co",
+   "platform": "snackpass"
+  },
+  {
+   "domain": "spotapps.co",
+   "platform": "spothopper"
+  },
+  {
+   "domain": "spothopper.com",
+   "platform": "spothopper"
+  },
+  {
+   "domain": "spoton.com",
+   "platform": "spoton"
+  },
+  {
+   "domain": "sqspcdn.com",
+   "platform": "squarespace"
+  },
+  {
+   "domain": "square.site",
+   "platform": "square_online"
+  },
+  {
+   "domain": "squarespace.com",
+   "platform": "squarespace"
+  },
+  {
+   "domain": "squarespacescheduling.com",
+   "platform": "acuity"
+  },
+  {
+   "domain": "squareup.com",
+   "platform": "square"
+  },
+  {
+   "domain": "styleseat.com",
+   "platform": "styleseat"
+  },
+  {
+   "domain": "teeitup.com",
+   "platform": "teeitup"
+  },
+  {
+   "domain": "thanx.com",
+   "platform": "thanx"
+  },
+  {
+   "domain": "thecut.co",
+   "platform": "thecut"
+  },
+  {
+   "domain": "thumbtack.com",
+   "platform": "thumbtack"
+  },
+  {
+   "domain": "tidycal.com",
+   "platform": "tidycal"
+  },
+  {
+   "domain": "tiktok.com",
+   "platform": "tiktok"
+  },
+  {
+   "domain": "toast.app",
+   "platform": "toast"
+  },
+  {
+   "domain": "toast.site",
+   "platform": "toast"
+  },
+  {
+   "domain": "toasttab.com",
+   "platform": "toast"
+  },
+  {
+   "domain": "toastwebstore.com",
+   "platform": "toast"
+  },
+  {
+   "domain": "tripleseat.com",
+   "platform": "tripleseat"
+  },
+  {
+   "domain": "ubereats.com",
+   "platform": "ubereats"
+  },
+  {
+   "domain": "vagaro.com",
+   "platform": "vagaro"
+  },
+  {
+   "domain": "vcita.com",
+   "platform": "vcita"
+  },
+  {
+   "domain": "wa.link",
+   "platform": "whatsapp"
+  },
+  {
+   "domain": "wa.me",
+   "platform": "whatsapp"
+  },
+  {
+   "domain": "webflow.io",
+   "platform": "webflow"
+  },
+  {
+   "domain": "whatsapp.com",
+   "platform": "whatsapp"
+  },
+  {
+   "domain": "wix.com",
+   "platform": "wix"
+  },
+  {
+   "domain": "wixsite.com",
+   "platform": "wix"
+  },
+  {
+   "domain": "wordpress.com",
+   "platform": "wordpress"
+  },
+  {
+   "domain": "wp.com",
+   "platform": null
+  },
+  {
+   "domain": "wsimg.com",
+   "platform": "godaddy"
+  },
+  {
+   "domain": "xola.com",
+   "platform": "xola"
+  },
+  {
+   "domain": "yelp.com",
+   "platform": "yelp"
+  },
+  {
+   "domain": "youtube.com",
+   "platform": "youtube"
+  },
+  {
+   "domain": "zenoti.com",
+   "platform": "zenoti"
+  },
+  {
+   "domain": "zocdoc.com",
+   "platform": "zocdoc"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "taken_at": "2026-11-02T10:25:38.884Z",
+ "recipes": [
+  {
+   "host": "allmenus.com",
+   "path_shape": "/fl/{x}",
+   "how": "our_reader",
+   "platform_key": "allmenus"
+  },
+  {
+   "host": "booksy.com",
+   "path_shape": "/en-us/{x}",
+   "how": "our_reader",
+   "platform_key": "booksy"
+  }
+ ]
+}

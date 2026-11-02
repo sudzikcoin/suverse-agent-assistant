@@ -64,6 +64,22 @@ and the live answer (2026-11-02), cut to the first business:
 }
 ```
 
+## Read any business website yourself
+
+[`reader/`](reader) is Versum's own open reader: the same readers the catalogue runs, on your machine, for any
+website — items with prices, the doors to order, book or ask, hours and contacts, every value with the words it was
+read from. No Google, no proxy, no browser; robots.txt obeyed; a model only with your own `ANTHROPIC_API_KEY`
+(`--no-model` turns it off).
+
+```sh
+cd reader && npm install && npm run build
+node dist/cli.cjs read https://example-business.com --pretty
+```
+
+Its shared cache is free and on by default (`--no-share` or `VERSUM_SHARE=0` turns it off): what is sent and kept
+is in [reader/README.md](reader/README.md#shared-cache--free-on-by-default) and the
+[privacy policy](https://versum.suverse.io/privacy).
+
 ## Tools
 
 | tool | what it does | main parameters |
@@ -181,6 +197,7 @@ flowchart LR
 
 ## License and contact
 
-MIT for the schemas, the taxonomy and the documentation in this repository; the catalogue's code is closed.
+MIT for the schemas, the taxonomy, the documentation and the open reader (`reader/`) in this repository; the hosted
+catalogue's service code is closed.
 [Privacy Policy](https://versum.suverse.io/privacy) · [Terms of Service](https://versum.suverse.io/terms) (SuVerse LLC).
 Contact: info@suverse.io. The compute side of Versum is [versum-node](https://github.com/sudzikcoin/versum-node).

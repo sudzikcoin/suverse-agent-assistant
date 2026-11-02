@@ -1,0 +1,1487 @@
+{
+ "taken_at": "2026-11-02T10:25:38.884Z",
+ "rows": [
+  {
+   "kind": "book",
+   "lang": "de",
+   "word": "buchen",
+   "mode": "word"
+  },
+  {
+   "kind": "book",
+   "lang": "de",
+   "word": "termin",
+   "mode": "word"
+  },
+  {
+   "kind": "book",
+   "lang": "es",
+   "word": "agendar",
+   "mode": "word"
+  },
+  {
+   "kind": "book",
+   "lang": "es",
+   "word": "cita",
+   "mode": "word"
+  },
+  {
+   "kind": "book",
+   "lang": "fr",
+   "word": "rendez-vous",
+   "mode": "word"
+  },
+  {
+   "kind": "book",
+   "lang": "hi",
+   "word": "बुक",
+   "mode": "word"
+  },
+  {
+   "kind": "book",
+   "lang": "id",
+   "word": "booking",
+   "mode": "word"
+  },
+  {
+   "kind": "book",
+   "lang": "it",
+   "word": "appuntamento",
+   "mode": "word"
+  },
+  {
+   "kind": "book",
+   "lang": "ja",
+   "word": "予約",
+   "mode": "substring"
+  },
+  {
+   "kind": "book",
+   "lang": "ko",
+   "word": "예약",
+   "mode": "substring"
+  },
+  {
+   "kind": "book",
+   "lang": "pt",
+   "word": "agendamento",
+   "mode": "word"
+  },
+  {
+   "kind": "book",
+   "lang": "pt",
+   "word": "agendar",
+   "mode": "word"
+  },
+  {
+   "kind": "book",
+   "lang": "ru",
+   "word": "записаться",
+   "mode": "word"
+  },
+  {
+   "kind": "book",
+   "lang": "ru",
+   "word": "запись",
+   "mode": "word"
+  },
+  {
+   "kind": "book",
+   "lang": "tr",
+   "word": "randevu",
+   "mode": "word"
+  },
+  {
+   "kind": "book",
+   "lang": "uk",
+   "word": "запис",
+   "mode": "word"
+  },
+  {
+   "kind": "book",
+   "lang": "uk",
+   "word": "записатися",
+   "mode": "word"
+  },
+  {
+   "kind": "book",
+   "lang": "vi",
+   "word": "đặt lịch",
+   "mode": "word"
+  },
+  {
+   "kind": "book",
+   "lang": "zh",
+   "word": "預約",
+   "mode": "substring"
+  },
+  {
+   "kind": "book",
+   "lang": "zh",
+   "word": "预约",
+   "mode": "substring"
+  },
+  {
+   "kind": "contact",
+   "lang": "ar",
+   "word": "اتصل",
+   "mode": "substring"
+  },
+  {
+   "kind": "contact",
+   "lang": "de",
+   "word": "impressum",
+   "mode": "word"
+  },
+  {
+   "kind": "contact",
+   "lang": "de",
+   "word": "kontakt",
+   "mode": "word"
+  },
+  {
+   "kind": "contact",
+   "lang": "es",
+   "word": "contacto",
+   "mode": "word"
+  },
+  {
+   "kind": "contact",
+   "lang": "fr",
+   "word": "contact",
+   "mode": "word"
+  },
+  {
+   "kind": "contact",
+   "lang": "it",
+   "word": "contatti",
+   "mode": "word"
+  },
+  {
+   "kind": "contact",
+   "lang": "ja",
+   "word": "お問い合わせ",
+   "mode": "substring"
+  },
+  {
+   "kind": "contact",
+   "lang": "ko",
+   "word": "문의",
+   "mode": "substring"
+  },
+  {
+   "kind": "contact",
+   "lang": "pt",
+   "word": "contato",
+   "mode": "word"
+  },
+  {
+   "kind": "contact",
+   "lang": "ru",
+   "word": "контакты",
+   "mode": "word"
+  },
+  {
+   "kind": "contact",
+   "lang": "th",
+   "word": "ติดต่อ",
+   "mode": "substring"
+  },
+  {
+   "kind": "contact",
+   "lang": "tr",
+   "word": "iletişim",
+   "mode": "word"
+  },
+  {
+   "kind": "contact",
+   "lang": "uk",
+   "word": "контакти",
+   "mode": "word"
+  },
+  {
+   "kind": "contact",
+   "lang": "zh",
+   "word": "联系",
+   "mode": "substring"
+  },
+  {
+   "kind": "contact",
+   "lang": "zh",
+   "word": "聯絡",
+   "mode": "substring"
+  },
+  {
+   "kind": "dead",
+   "lang": "de",
+   "word": "nicht mehr verfügbar",
+   "mode": "substring"
+  },
+  {
+   "kind": "dead",
+   "lang": "de",
+   "word": "seite nicht gefunden",
+   "mode": "substring"
+  },
+  {
+   "kind": "dead",
+   "lang": "en",
+   "word": "account has been suspended",
+   "mode": "substring"
+  },
+  {
+   "kind": "dead",
+   "lang": "en",
+   "word": "link expired",
+   "mode": "substring"
+  },
+  {
+   "kind": "dead",
+   "lang": "en",
+   "word": "menu is not valid",
+   "mode": "substring"
+  },
+  {
+   "kind": "dead",
+   "lang": "en",
+   "word": "menu not found",
+   "mode": "substring"
+  },
+  {
+   "kind": "dead",
+   "lang": "en",
+   "word": "no longer accepting",
+   "mode": "substring"
+  },
+  {
+   "kind": "dead",
+   "lang": "en",
+   "word": "no longer available",
+   "mode": "substring"
+  },
+  {
+   "kind": "dead",
+   "lang": "en",
+   "word": "page not found",
+   "mode": "substring"
+  },
+  {
+   "kind": "dead",
+   "lang": "en",
+   "word": "page you requested could not be found",
+   "mode": "substring"
+  },
+  {
+   "kind": "dead",
+   "lang": "en",
+   "word": "permanently closed",
+   "mode": "substring"
+  },
+  {
+   "kind": "dead",
+   "lang": "en",
+   "word": "restaurant is closed permanently",
+   "mode": "substring"
+  },
+  {
+   "kind": "dead",
+   "lang": "en",
+   "word": "store not found",
+   "mode": "substring"
+  },
+  {
+   "kind": "dead",
+   "lang": "en",
+   "word": "this link has expired",
+   "mode": "substring"
+  },
+  {
+   "kind": "dead",
+   "lang": "en",
+   "word": "this menu is not",
+   "mode": "substring"
+  },
+  {
+   "kind": "dead",
+   "lang": "en",
+   "word": "this page does not exist",
+   "mode": "substring"
+  },
+  {
+   "kind": "dead",
+   "lang": "en",
+   "word": "this store is closed",
+   "mode": "substring"
+  },
+  {
+   "kind": "dead",
+   "lang": "es",
+   "word": "menú no válido",
+   "mode": "substring"
+  },
+  {
+   "kind": "dead",
+   "lang": "es",
+   "word": "página no encontrada",
+   "mode": "substring"
+  },
+  {
+   "kind": "dead",
+   "lang": "es",
+   "word": "ya no está disponible",
+   "mode": "substring"
+  },
+  {
+   "kind": "dead",
+   "lang": "fr",
+   "word": "n'est plus disponible",
+   "mode": "substring"
+  },
+  {
+   "kind": "dead",
+   "lang": "fr",
+   "word": "page introuvable",
+   "mode": "substring"
+  },
+  {
+   "kind": "dead",
+   "lang": "it",
+   "word": "non è più disponibile",
+   "mode": "substring"
+  },
+  {
+   "kind": "dead",
+   "lang": "it",
+   "word": "pagina non trovata",
+   "mode": "substring"
+  },
+  {
+   "kind": "dead",
+   "lang": "pt",
+   "word": "não está mais disponível",
+   "mode": "substring"
+  },
+  {
+   "kind": "dead",
+   "lang": "pt",
+   "word": "página não encontrada",
+   "mode": "substring"
+  },
+  {
+   "kind": "dead",
+   "lang": "ru",
+   "word": "больше не доступ",
+   "mode": "substring"
+  },
+  {
+   "kind": "dead",
+   "lang": "ru",
+   "word": "страница не найдена",
+   "mode": "substring"
+  },
+  {
+   "kind": "dead",
+   "lang": "uk",
+   "word": "сторінку не знайдено",
+   "mode": "substring"
+  },
+  {
+   "kind": "delivery",
+   "lang": "ar",
+   "word": "توصيل",
+   "mode": "substring"
+  },
+  {
+   "kind": "delivery",
+   "lang": "de",
+   "word": "lieferservice",
+   "mode": "word"
+  },
+  {
+   "kind": "delivery",
+   "lang": "de",
+   "word": "lieferung",
+   "mode": "word"
+  },
+  {
+   "kind": "delivery",
+   "lang": "es",
+   "word": "domicilio",
+   "mode": "word"
+  },
+  {
+   "kind": "delivery",
+   "lang": "es",
+   "word": "entrega",
+   "mode": "word"
+  },
+  {
+   "kind": "delivery",
+   "lang": "fr",
+   "word": "livraison",
+   "mode": "word"
+  },
+  {
+   "kind": "delivery",
+   "lang": "hi",
+   "word": "डिलीवरी",
+   "mode": "word"
+  },
+  {
+   "kind": "delivery",
+   "lang": "id",
+   "word": "pengiriman",
+   "mode": "word"
+  },
+  {
+   "kind": "delivery",
+   "lang": "it",
+   "word": "consegna",
+   "mode": "word"
+  },
+  {
+   "kind": "delivery",
+   "lang": "ja",
+   "word": "デリバリー",
+   "mode": "substring"
+  },
+  {
+   "kind": "delivery",
+   "lang": "ja",
+   "word": "配達",
+   "mode": "substring"
+  },
+  {
+   "kind": "delivery",
+   "lang": "ko",
+   "word": "배달",
+   "mode": "substring"
+  },
+  {
+   "kind": "delivery",
+   "lang": "pt",
+   "word": "delivery",
+   "mode": "word"
+  },
+  {
+   "kind": "delivery",
+   "lang": "pt",
+   "word": "entrega",
+   "mode": "word"
+  },
+  {
+   "kind": "delivery",
+   "lang": "ru",
+   "word": "доставка",
+   "mode": "word"
+  },
+  {
+   "kind": "delivery",
+   "lang": "th",
+   "word": "จัดส่ง",
+   "mode": "substring"
+  },
+  {
+   "kind": "delivery",
+   "lang": "tr",
+   "word": "paket servis",
+   "mode": "word"
+  },
+  {
+   "kind": "delivery",
+   "lang": "tr",
+   "word": "teslimat",
+   "mode": "word"
+  },
+  {
+   "kind": "delivery",
+   "lang": "uk",
+   "word": "доставка",
+   "mode": "word"
+  },
+  {
+   "kind": "delivery",
+   "lang": "vi",
+   "word": "giao hàng",
+   "mode": "word"
+  },
+  {
+   "kind": "delivery",
+   "lang": "zh",
+   "word": "外卖",
+   "mode": "substring"
+  },
+  {
+   "kind": "delivery",
+   "lang": "zh",
+   "word": "外賣",
+   "mode": "substring"
+  },
+  {
+   "kind": "hours",
+   "lang": "ar",
+   "word": "ساعات العمل",
+   "mode": "substring"
+  },
+  {
+   "kind": "hours",
+   "lang": "de",
+   "word": "öffnungszeiten",
+   "mode": "word"
+  },
+  {
+   "kind": "hours",
+   "lang": "es",
+   "word": "horario",
+   "mode": "word"
+  },
+  {
+   "kind": "hours",
+   "lang": "fr",
+   "word": "horaires",
+   "mode": "word"
+  },
+  {
+   "kind": "hours",
+   "lang": "id",
+   "word": "jam buka",
+   "mode": "word"
+  },
+  {
+   "kind": "hours",
+   "lang": "it",
+   "word": "orari",
+   "mode": "word"
+  },
+  {
+   "kind": "hours",
+   "lang": "ja",
+   "word": "営業時間",
+   "mode": "substring"
+  },
+  {
+   "kind": "hours",
+   "lang": "ko",
+   "word": "영업시간",
+   "mode": "substring"
+  },
+  {
+   "kind": "hours",
+   "lang": "pt",
+   "word": "horário",
+   "mode": "word"
+  },
+  {
+   "kind": "hours",
+   "lang": "ru",
+   "word": "режим работы",
+   "mode": "word"
+  },
+  {
+   "kind": "hours",
+   "lang": "ru",
+   "word": "часы работы",
+   "mode": "word"
+  },
+  {
+   "kind": "hours",
+   "lang": "th",
+   "word": "เวลาทำการ",
+   "mode": "substring"
+  },
+  {
+   "kind": "hours",
+   "lang": "tr",
+   "word": "çalışma saatleri",
+   "mode": "word"
+  },
+  {
+   "kind": "hours",
+   "lang": "uk",
+   "word": "години роботи",
+   "mode": "word"
+  },
+  {
+   "kind": "hours",
+   "lang": "uk",
+   "word": "графік роботи",
+   "mode": "word"
+  },
+  {
+   "kind": "hours",
+   "lang": "vi",
+   "word": "giờ mở cửa",
+   "mode": "word"
+  },
+  {
+   "kind": "hours",
+   "lang": "zh",
+   "word": "營業時間",
+   "mode": "substring"
+  },
+  {
+   "kind": "hours",
+   "lang": "zh",
+   "word": "营业时间",
+   "mode": "substring"
+  },
+  {
+   "kind": "menu",
+   "lang": "ar",
+   "word": "المنيو",
+   "mode": "substring"
+  },
+  {
+   "kind": "menu",
+   "lang": "ar",
+   "word": "قائمة الطعام",
+   "mode": "substring"
+  },
+  {
+   "kind": "menu",
+   "lang": "de",
+   "word": "getränke",
+   "mode": "word"
+  },
+  {
+   "kind": "menu",
+   "lang": "de",
+   "word": "karte",
+   "mode": "substring"
+  },
+  {
+   "kind": "menu",
+   "lang": "de",
+   "word": "menü",
+   "mode": "word"
+  },
+  {
+   "kind": "menu",
+   "lang": "de",
+   "word": "speisekarte",
+   "mode": "word"
+  },
+  {
+   "kind": "menu",
+   "lang": "de",
+   "word": "speisen",
+   "mode": "word"
+  },
+  {
+   "kind": "menu",
+   "lang": "es",
+   "word": "carta",
+   "mode": "word"
+  },
+  {
+   "kind": "menu",
+   "lang": "es",
+   "word": "menú",
+   "mode": "word"
+  },
+  {
+   "kind": "menu",
+   "lang": "fr",
+   "word": "carte",
+   "mode": "word"
+  },
+  {
+   "kind": "menu",
+   "lang": "fr",
+   "word": "menu",
+   "mode": "word"
+  },
+  {
+   "kind": "menu",
+   "lang": "hi",
+   "word": "मेनू",
+   "mode": "word"
+  },
+  {
+   "kind": "menu",
+   "lang": "hr",
+   "word": "jelovnik",
+   "mode": "word"
+  },
+  {
+   "kind": "menu",
+   "lang": "hr",
+   "word": "meni",
+   "mode": "word"
+  },
+  {
+   "kind": "menu",
+   "lang": "it",
+   "word": "carta",
+   "mode": "word"
+  },
+  {
+   "kind": "menu",
+   "lang": "it",
+   "word": "menù",
+   "mode": "word"
+  },
+  {
+   "kind": "menu",
+   "lang": "ja",
+   "word": "お品書き",
+   "mode": "substring"
+  },
+  {
+   "kind": "menu",
+   "lang": "ja",
+   "word": "メニュー",
+   "mode": "substring"
+  },
+  {
+   "kind": "menu",
+   "lang": "ko",
+   "word": "메뉴",
+   "mode": "substring"
+  },
+  {
+   "kind": "menu",
+   "lang": "ms",
+   "word": "menu",
+   "mode": "word"
+  },
+  {
+   "kind": "menu",
+   "lang": "nl",
+   "word": "kaart",
+   "mode": "word"
+  },
+  {
+   "kind": "menu",
+   "lang": "nl",
+   "word": "menukaart",
+   "mode": "word"
+  },
+  {
+   "kind": "menu",
+   "lang": "pt",
+   "word": "cardapio",
+   "mode": "word"
+  },
+  {
+   "kind": "menu",
+   "lang": "pt",
+   "word": "cardápio",
+   "mode": "word"
+  },
+  {
+   "kind": "menu",
+   "lang": "pt",
+   "word": "ementa",
+   "mode": "word"
+  },
+  {
+   "kind": "menu",
+   "lang": "ru",
+   "word": "меню",
+   "mode": "word"
+  },
+  {
+   "kind": "menu",
+   "lang": "th",
+   "word": "เมนู",
+   "mode": "substring"
+  },
+  {
+   "kind": "menu",
+   "lang": "tr",
+   "word": "menü",
+   "mode": "word"
+  },
+  {
+   "kind": "menu",
+   "lang": "uk",
+   "word": "меню",
+   "mode": "word"
+  },
+  {
+   "kind": "menu",
+   "lang": "vi",
+   "word": "thực đơn",
+   "mode": "word"
+  },
+  {
+   "kind": "menu",
+   "lang": "zh",
+   "word": "菜单",
+   "mode": "substring"
+  },
+  {
+   "kind": "menu",
+   "lang": "zh",
+   "word": "菜單",
+   "mode": "substring"
+  },
+  {
+   "kind": "menu",
+   "lang": "zh",
+   "word": "餐牌",
+   "mode": "substring"
+  },
+  {
+   "kind": "moved",
+   "lang": "de",
+   "word": "neue speisekarte",
+   "mode": "substring"
+  },
+  {
+   "kind": "moved",
+   "lang": "en",
+   "word": "click here",
+   "mode": "substring"
+  },
+  {
+   "kind": "moved",
+   "lang": "en",
+   "word": "current menu",
+   "mode": "substring"
+  },
+  {
+   "kind": "moved",
+   "lang": "en",
+   "word": "go to",
+   "mode": "substring"
+  },
+  {
+   "kind": "moved",
+   "lang": "en",
+   "word": "new link",
+   "mode": "substring"
+  },
+  {
+   "kind": "moved",
+   "lang": "en",
+   "word": "new menu",
+   "mode": "substring"
+  },
+  {
+   "kind": "moved",
+   "lang": "en",
+   "word": "our new",
+   "mode": "substring"
+  },
+  {
+   "kind": "moved",
+   "lang": "en",
+   "word": "see this one",
+   "mode": "substring"
+  },
+  {
+   "kind": "moved",
+   "lang": "en",
+   "word": "we have moved",
+   "mode": "substring"
+  },
+  {
+   "kind": "moved",
+   "lang": "es",
+   "word": "haz clic aquí",
+   "mode": "substring"
+  },
+  {
+   "kind": "moved",
+   "lang": "es",
+   "word": "nuevo menú",
+   "mode": "substring"
+  },
+  {
+   "kind": "moved",
+   "lang": "fr",
+   "word": "nouveau menu",
+   "mode": "substring"
+  },
+  {
+   "kind": "moved",
+   "lang": "pt",
+   "word": "novo cardápio",
+   "mode": "substring"
+  },
+  {
+   "kind": "order",
+   "lang": "ar",
+   "word": "اطلب",
+   "mode": "substring"
+  },
+  {
+   "kind": "order",
+   "lang": "de",
+   "word": "abholung",
+   "mode": "word"
+  },
+  {
+   "kind": "order",
+   "lang": "de",
+   "word": "bestellen",
+   "mode": "word"
+  },
+  {
+   "kind": "order",
+   "lang": "de",
+   "word": "bestellung",
+   "mode": "word"
+  },
+  {
+   "kind": "order",
+   "lang": "es",
+   "word": "ordenar",
+   "mode": "word"
+  },
+  {
+   "kind": "order",
+   "lang": "es",
+   "word": "para llevar",
+   "mode": "word"
+  },
+  {
+   "kind": "order",
+   "lang": "es",
+   "word": "pedido",
+   "mode": "word"
+  },
+  {
+   "kind": "order",
+   "lang": "es",
+   "word": "pedir",
+   "mode": "word"
+  },
+  {
+   "kind": "order",
+   "lang": "fr",
+   "word": "à emporter",
+   "mode": "word"
+  },
+  {
+   "kind": "order",
+   "lang": "fr",
+   "word": "commander",
+   "mode": "word"
+  },
+  {
+   "kind": "order",
+   "lang": "hi",
+   "word": "ऑर्डर",
+   "mode": "word"
+  },
+  {
+   "kind": "order",
+   "lang": "hr",
+   "word": "naruči",
+   "mode": "word"
+  },
+  {
+   "kind": "order",
+   "lang": "id",
+   "word": "pesan",
+   "mode": "word"
+  },
+  {
+   "kind": "order",
+   "lang": "it",
+   "word": "asporto",
+   "mode": "word"
+  },
+  {
+   "kind": "order",
+   "lang": "it",
+   "word": "ordina",
+   "mode": "word"
+  },
+  {
+   "kind": "order",
+   "lang": "ja",
+   "word": "テイクアウト",
+   "mode": "substring"
+  },
+  {
+   "kind": "order",
+   "lang": "ja",
+   "word": "注文",
+   "mode": "substring"
+  },
+  {
+   "kind": "order",
+   "lang": "ko",
+   "word": "주문",
+   "mode": "substring"
+  },
+  {
+   "kind": "order",
+   "lang": "ko",
+   "word": "포장",
+   "mode": "substring"
+  },
+  {
+   "kind": "order",
+   "lang": "ms",
+   "word": "pesan",
+   "mode": "word"
+  },
+  {
+   "kind": "order",
+   "lang": "nl",
+   "word": "bestel",
+   "mode": "word"
+  },
+  {
+   "kind": "order",
+   "lang": "pt",
+   "word": "encomendar",
+   "mode": "word"
+  },
+  {
+   "kind": "order",
+   "lang": "pt",
+   "word": "peça",
+   "mode": "word"
+  },
+  {
+   "kind": "order",
+   "lang": "pt",
+   "word": "pedir",
+   "mode": "word"
+  },
+  {
+   "kind": "order",
+   "lang": "ru",
+   "word": "заказ",
+   "mode": "word"
+  },
+  {
+   "kind": "order",
+   "lang": "ru",
+   "word": "заказать",
+   "mode": "word"
+  },
+  {
+   "kind": "order",
+   "lang": "th",
+   "word": "สั่งอาหาร",
+   "mode": "substring"
+  },
+  {
+   "kind": "order",
+   "lang": "tr",
+   "word": "sipariş",
+   "mode": "word"
+  },
+  {
+   "kind": "order",
+   "lang": "uk",
+   "word": "замовити",
+   "mode": "word"
+  },
+  {
+   "kind": "order",
+   "lang": "uk",
+   "word": "замовлення",
+   "mode": "word"
+  },
+  {
+   "kind": "order",
+   "lang": "vi",
+   "word": "đặt món",
+   "mode": "word"
+  },
+  {
+   "kind": "order",
+   "lang": "zh",
+   "word": "点餐",
+   "mode": "substring"
+  },
+  {
+   "kind": "order",
+   "lang": "zh",
+   "word": "訂餐",
+   "mode": "substring"
+  },
+  {
+   "kind": "order",
+   "lang": "zh",
+   "word": "订餐",
+   "mode": "substring"
+  },
+  {
+   "kind": "order",
+   "lang": "zh",
+   "word": "點餐",
+   "mode": "substring"
+  },
+  {
+   "kind": "price",
+   "lang": "ar",
+   "word": "الأسعار",
+   "mode": "substring"
+  },
+  {
+   "kind": "price",
+   "lang": "de",
+   "word": "preise",
+   "mode": "word"
+  },
+  {
+   "kind": "price",
+   "lang": "es",
+   "word": "precio",
+   "mode": "word"
+  },
+  {
+   "kind": "price",
+   "lang": "es",
+   "word": "precios",
+   "mode": "word"
+  },
+  {
+   "kind": "price",
+   "lang": "fr",
+   "word": "prix",
+   "mode": "word"
+  },
+  {
+   "kind": "price",
+   "lang": "fr",
+   "word": "tarifs",
+   "mode": "word"
+  },
+  {
+   "kind": "price",
+   "lang": "hi",
+   "word": "कीमत",
+   "mode": "word"
+  },
+  {
+   "kind": "price",
+   "lang": "id",
+   "word": "harga",
+   "mode": "word"
+  },
+  {
+   "kind": "price",
+   "lang": "it",
+   "word": "prezzi",
+   "mode": "word"
+  },
+  {
+   "kind": "price",
+   "lang": "ja",
+   "word": "価格",
+   "mode": "substring"
+  },
+  {
+   "kind": "price",
+   "lang": "ja",
+   "word": "料金",
+   "mode": "substring"
+  },
+  {
+   "kind": "price",
+   "lang": "ko",
+   "word": "가격",
+   "mode": "substring"
+  },
+  {
+   "kind": "price",
+   "lang": "pt",
+   "word": "preço",
+   "mode": "word"
+  },
+  {
+   "kind": "price",
+   "lang": "pt",
+   "word": "preços",
+   "mode": "word"
+  },
+  {
+   "kind": "price",
+   "lang": "ru",
+   "word": "прайс",
+   "mode": "word"
+  },
+  {
+   "kind": "price",
+   "lang": "ru",
+   "word": "цена",
+   "mode": "word"
+  },
+  {
+   "kind": "price",
+   "lang": "ru",
+   "word": "цены",
+   "mode": "word"
+  },
+  {
+   "kind": "price",
+   "lang": "th",
+   "word": "ราคา",
+   "mode": "substring"
+  },
+  {
+   "kind": "price",
+   "lang": "tr",
+   "word": "fiyat",
+   "mode": "word"
+  },
+  {
+   "kind": "price",
+   "lang": "tr",
+   "word": "fiyatlar",
+   "mode": "word"
+  },
+  {
+   "kind": "price",
+   "lang": "uk",
+   "word": "прайс",
+   "mode": "word"
+  },
+  {
+   "kind": "price",
+   "lang": "uk",
+   "word": "ціна",
+   "mode": "word"
+  },
+  {
+   "kind": "price",
+   "lang": "uk",
+   "word": "ціни",
+   "mode": "word"
+  },
+  {
+   "kind": "price",
+   "lang": "vi",
+   "word": "giá",
+   "mode": "word"
+  },
+  {
+   "kind": "price",
+   "lang": "zh",
+   "word": "价格",
+   "mode": "substring"
+  },
+  {
+   "kind": "price",
+   "lang": "zh",
+   "word": "價格",
+   "mode": "substring"
+  },
+  {
+   "kind": "reserve",
+   "lang": "ar",
+   "word": "حجز",
+   "mode": "substring"
+  },
+  {
+   "kind": "reserve",
+   "lang": "de",
+   "word": "reservieren",
+   "mode": "word"
+  },
+  {
+   "kind": "reserve",
+   "lang": "de",
+   "word": "reservierung",
+   "mode": "word"
+  },
+  {
+   "kind": "reserve",
+   "lang": "de",
+   "word": "tisch reservieren",
+   "mode": "word"
+  },
+  {
+   "kind": "reserve",
+   "lang": "es",
+   "word": "reserva",
+   "mode": "word"
+  },
+  {
+   "kind": "reserve",
+   "lang": "es",
+   "word": "reservación",
+   "mode": "word"
+  },
+  {
+   "kind": "reserve",
+   "lang": "es",
+   "word": "reservar",
+   "mode": "word"
+  },
+  {
+   "kind": "reserve",
+   "lang": "fr",
+   "word": "réservation",
+   "mode": "word"
+  },
+  {
+   "kind": "reserve",
+   "lang": "fr",
+   "word": "réserver",
+   "mode": "word"
+  },
+  {
+   "kind": "reserve",
+   "lang": "hi",
+   "word": "आरक्षण",
+   "mode": "word"
+  },
+  {
+   "kind": "reserve",
+   "lang": "hr",
+   "word": "rezervacija",
+   "mode": "word"
+  },
+  {
+   "kind": "reserve",
+   "lang": "hr",
+   "word": "rezerviraj",
+   "mode": "word"
+  },
+  {
+   "kind": "reserve",
+   "lang": "id",
+   "word": "reservasi",
+   "mode": "word"
+  },
+  {
+   "kind": "reserve",
+   "lang": "it",
+   "word": "prenota",
+   "mode": "word"
+  },
+  {
+   "kind": "reserve",
+   "lang": "it",
+   "word": "prenotazione",
+   "mode": "word"
+  },
+  {
+   "kind": "reserve",
+   "lang": "ja",
+   "word": "予約",
+   "mode": "substring"
+  },
+  {
+   "kind": "reserve",
+   "lang": "ko",
+   "word": "예약",
+   "mode": "substring"
+  },
+  {
+   "kind": "reserve",
+   "lang": "ms",
+   "word": "tempahan",
+   "mode": "word"
+  },
+  {
+   "kind": "reserve",
+   "lang": "nl",
+   "word": "reserveren",
+   "mode": "word"
+  },
+  {
+   "kind": "reserve",
+   "lang": "pt",
+   "word": "reserva",
+   "mode": "word"
+  },
+  {
+   "kind": "reserve",
+   "lang": "pt",
+   "word": "reservar",
+   "mode": "word"
+  },
+  {
+   "kind": "reserve",
+   "lang": "ru",
+   "word": "бронирование",
+   "mode": "word"
+  },
+  {
+   "kind": "reserve",
+   "lang": "ru",
+   "word": "бронировать",
+   "mode": "word"
+  },
+  {
+   "kind": "reserve",
+   "lang": "ru",
+   "word": "бронь",
+   "mode": "word"
+  },
+  {
+   "kind": "reserve",
+   "lang": "ru",
+   "word": "забронировать",
+   "mode": "word"
+  },
+  {
+   "kind": "reserve",
+   "lang": "th",
+   "word": "จอง",
+   "mode": "substring"
+  },
+  {
+   "kind": "reserve",
+   "lang": "th",
+   "word": "จองโต๊ะ",
+   "mode": "substring"
+  },
+  {
+   "kind": "reserve",
+   "lang": "tr",
+   "word": "rezervasyon",
+   "mode": "word"
+  },
+  {
+   "kind": "reserve",
+   "lang": "uk",
+   "word": "бронювання",
+   "mode": "word"
+  },
+  {
+   "kind": "reserve",
+   "lang": "uk",
+   "word": "забронювати",
+   "mode": "word"
+  },
+  {
+   "kind": "reserve",
+   "lang": "vi",
+   "word": "đặt bàn",
+   "mode": "word"
+  },
+  {
+   "kind": "reserve",
+   "lang": "zh",
+   "word": "訂位",
+   "mode": "substring"
+  },
+  {
+   "kind": "reserve",
+   "lang": "zh",
+   "word": "订位",
+   "mode": "substring"
+  },
+  {
+   "kind": "reserve",
+   "lang": "zh",
+   "word": "订座",
+   "mode": "substring"
+  },
+  {
+   "kind": "reserve",
+   "lang": "zh",
+   "word": "預訂",
+   "mode": "substring"
+  },
+  {
+   "kind": "reserve",
+   "lang": "zh",
+   "word": "预订",
+   "mode": "substring"
+  }
+ ]
+}

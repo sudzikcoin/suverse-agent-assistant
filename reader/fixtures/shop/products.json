@@ -1,0 +1,5 @@
+{"products":[
+ {"id":101,"title":"Fig and Cedar Candle","handle":"fig-and-cedar","product_type":"Candles","tags":[],"body_html":"<p>Soy wax.</p>","variants":[{"id":1,"title":"Default","price":"24.00","available":true}],"images":[]},
+ {"id":102,"title":"Sea Salt Candle","handle":"sea-salt","product_type":"Candles","tags":[],"body_html":"","variants":[{"id":2,"title":"Default","price":"22.50","available":true}],"images":[]},
+ {"id":103,"title":"Wick Trimmer","handle":"wick-trimmer","product_type":"Tools","tags":[],"body_html":"","variants":[{"id":3,"title":"Default","price":"12.00","available":false}],"images":[]}
+]}

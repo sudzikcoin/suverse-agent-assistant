@@ -7,7 +7,7 @@ npx -y @suverselabs/versum-mcp
 ```
 
 A stdio MCP server that forwards everything to the Versum MCP door, `https://versum.suverse.io/mcp`. No logic of its
-own, no API key: the tools are the door's own 13 tools, and a new tool there appears here without an update.
+own, no API key: the tools are the door's own tools (15 today), and a new tool there appears here without an update.
 It also exports a small typed client (below).
 
 ## Use with an MCP client

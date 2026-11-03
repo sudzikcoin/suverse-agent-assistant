@@ -25,7 +25,7 @@ https://versum.suverse.io/mcp
 ```
 
 Config for an MCP client that takes a JSON server list with streamable-HTTP servers (checked by connecting the
-official MCP TypeScript SDK client with exactly this entry: 13 tools listed, a live call answered):
+official MCP TypeScript SDK client with exactly this entry: 15 tools listed, a live call answered):
 
 ```json
 {
@@ -100,11 +100,16 @@ is in [reader/README.md](reader/README.md#shared-cache--free-on-by-default) and 
 | `place_order` | place an order in the business's own system; the buyer pays on the platform's checkout page | `business_id`, `lines` (required), `customer` |
 | `book_slot` | book a slot in the business's own calendar (Square Appointments) | `business_id`, `offering_id`, `start_at`, `customer` (required) |
 | `order_status` | what became of an order or a booking placed through this door | `order_id` |
+| `request_to_owner` | send a request to the business's verified owner (Telegram, e-mail or WhatsApp) — not a booking until the owner confirms | `business_id`, `what`, `customer`, `idempotency_key` (required), `date`, `time`, `quantity`, `branch`, `note` |
+| `request_status` | what became of a request: delivery (`sent` · `link_given` · `expired` · `failed`) and the owner's answer (`declined` · `other_time` · `available` = free but not booked · `confirmed` = booked) | `request_id` |
 
 `check_availability`, `place_order` and `book_slot` work for businesses whose owner connected Shopify or Square
 (the card shows `live_data`, and a `connected` door). Shopify: `place_order` returns the shop's own checkout link with
 the items in the cart; the buyer gives their details and pays on Shopify. For every other business the card's doors
 link to its own order and booking pages.
+
+`request_to_owner` works for businesses whose owner claimed the card and connected a channel; for the others it
+answers `no_channel` with the card's other doors. Retrying with the same `idempotency_key` never sends a second request.
 
 ### Example: `quote_order` — Flowers of Miami, 12 roses
 

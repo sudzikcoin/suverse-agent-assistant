@@ -4,7 +4,7 @@
 
 [![MCP](https://img.shields.io/badge/MCP-streamable%20HTTP-blue)](#60-second-quickstart)
 [![License: MIT](https://img.shields.io/badge/license-MIT%20(schemas%20%26%20docs)-green)](LICENSE)
-[![Cards](https://img.shields.io/badge/cards-7%2C415-orange)](#coverage)
+[![Cards](https://img.shields.io/badge/cards-8%2C337-orange)](#coverage)
 [![ToolSDK MCP Registry](https://badges.toolsdk.ai/badge/@toolsdk-remote/versum-agent-assistant)](https://toolsdk-ai.github.io/toolsdk-mcp-registry/#%40toolsdk-remote%2Fversum-agent-assistant)
 
 AI agents can find a local business, see what it sells, check availability and price, and open a real order or booking.
@@ -149,20 +149,25 @@ delivery address was sent (no name, e-mail or phone), and the cart session was e
 
 Every card belongs to one or more niches (trades): a `key`, the words people use for it (`also_called`) and the
 kinds of things it sells (`tags`). [`taxonomy/niches.json`](taxonomy/niches.json) lists the 128 niches as of
-2026-11-02, read from `list_niches`.
+2026-11-02, read from `list_niches`; the live catalogue has 130 as of 2026-11-03.
 
 ## Coverage
 
 | | |
 |---|---:|
-| cards on the shelf | 7,415 |
-| niches | 128 |
-| cities | 53 |
+| cards on the shelf | 8,337 |
+| niches | 130 |
+| towns and neighborhoods | 53 |
+
+As of 2026-11-03.
+
+| doors and prices (2026-11-02, out of 7,415 cards then) | |
+|---|---:|
 | with an online order door | 860 |
 | with an online booking or reservation door | 1,055 |
 | with prices | 1,045 |
 
-Numbers as of 2026-11-02.
+The densest coverage today is the Tampa Bay area; other Florida cities have far fewer cards so far.
 
 ## For business owners
 
@@ -191,11 +196,18 @@ flowchart LR
   E -->|owner claims, edits, connects Shopify / Square| C
 ```
 
+## Listed in
+
+- [ToolSDK MCP Registry](https://toolsdk-ai.github.io/toolsdk-mcp-registry/#%40toolsdk-remote%2Fversum-agent-assistant)
+
 ## Roadmap
 
+Done:
+- The open reader with a shared cache: [`reader/`](reader).
+
+Next:
+- Publish the npm package `@suverselabs/versum-mcp` (stdio, typed functions for the tools); its source is in [`npm/`](npm).
 - Listings in more MCP catalogues.
-- An npm package `@suverselabs/versum-mcp` (stdio) with typed functions for the tools.
-- An open reader with a shared cache: read any business website yourself.
 - WhatsApp click-to-chat doors.
 
 ## License and contact

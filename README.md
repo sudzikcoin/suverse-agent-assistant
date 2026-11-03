@@ -3,6 +3,7 @@
 [![MCP](https://img.shields.io/badge/MCP-streamable%20HTTP-blue)](#60-second-quickstart)
 [![License: MIT](https://img.shields.io/badge/license-MIT%20(schemas%20%26%20docs)-green)](LICENSE)
 [![Cards](https://img.shields.io/badge/cards-7%2C415-orange)](#coverage)
+[![ToolSDK MCP Registry](https://badges.toolsdk.ai/badge/@toolsdk-remote/versum-agent-assistant)](https://toolsdk-ai.github.io/toolsdk-mcp-registry/#%40toolsdk-remote%2Fversum-agent-assistant)
 
 AI agents can find a local business, see what it sells, check availability and price, and open a real order or booking.
 

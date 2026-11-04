@@ -4,7 +4,7 @@
 
 [![MCP](https://img.shields.io/badge/MCP-streamable%20HTTP-blue)](#60-second-quickstart)
 [![License: MIT](https://img.shields.io/badge/license-MIT%20(schemas%20%26%20docs)-green)](LICENSE)
-[![Cards](https://img.shields.io/badge/cards-8%2C337-orange)](#coverage)
+[![Cards](https://img.shields.io/badge/cards-12%2C064-orange)](#coverage)
 [![ToolSDK MCP Registry](https://badges.toolsdk.ai/badge/@toolsdk-remote/versum-agent-assistant)](https://toolsdk-ai.github.io/toolsdk-mcp-registry/#%40toolsdk-remote%2Fversum-agent-assistant)
 
 AI agents can find a local business, see what it sells, check availability and price, and open a real order or booking.
@@ -83,6 +83,29 @@ Its shared cache is free and on by default (`--no-share` or `VERSUM_SHARE=0` tur
 is in [reader/README.md](reader/README.md#shared-cache--free-on-by-default) and the
 [privacy policy](https://versum.suverse.io/privacy).
 
+## How to search (for agents)
+
+The server sends these rules to every client in its instructions; the short version:
+
+1. **Turn the person's request into a business type and a place.** «I'm locked out of my car in Tampa» → `locksmith`,
+   `Tampa`. «My AC is blowing warm air, 33618» → `hvac`, `33618`. You don't need the catalogue's internal niche keys:
+   `list_niches` and `search_catalog` match ordinary words.
+2. **Pick the tool:** you know the name → `find_business`; you know the type → `list_cards`; you don't, or you need a
+   specific item («vegan pizza», «brake pads») → `search_catalog`.
+3. **No place, no guess.** If the request has no city or ZIP, ask the person. The catalogue answers `location_needed`
+   rather than picking a place for you.
+4. **A result is a candidate.** Check the card: what it lists, whether it comes to the customer (`at_customer`:
+   confirmed / confirmed not / unknown), the service area, the doors.
+5. **Keep facts apart:** opening hours are not free time, an item price is not the final total, «nearby» is not «serves
+   your area», no data is not «no».
+6. **Next step through the right door:** menu or catalogue to look, `book` to book, `quote_order` for a total,
+   `request_to_owner` to ask the owner (only where a channel is connected), otherwise the phone.
+7. **Nothing on the person's behalf without their permission** — no requests, bookings, orders or payments.
+
+Each result says why it matched (`match.basis`: a confirmed item, the business's own words, a category tag, or the
+category only). When the catalogue cannot tell what kind of business a raw phrase needs, it says so and suggests close
+types instead of returning look-alikes.
+
 ## Tools
 
 | tool | what it does | main parameters |
@@ -160,11 +183,11 @@ kinds of things it sells (`tags`). [`taxonomy/niches.json`](taxonomy/niches.json
 
 | | |
 |---|---:|
-| cards on the shelf | 8,337 |
+| cards on the shelf | 12,064 |
 | niches | 130 |
 | towns and neighborhoods | 53 |
 
-As of 2026-11-03.
+As of 2026-11-04 (02:45 UTC). The catalogue grows daily: about 5,000 new pages on 2026-11-02 and 7,000 on 2026-11-03.
 
 | doors and prices (2026-11-02, out of 7,415 cards then) | |
 |---|---:|
@@ -172,7 +195,7 @@ As of 2026-11-03.
 | with an online booking or reservation door | 1,055 |
 | with prices | 1,045 |
 
-The densest coverage today is the Tampa Bay area; other Florida cities have far fewer cards so far.
+The densest coverage today is Tampa, St. Petersburg and the eastern Tampa Bay suburbs. Some places are still thin or empty — for example northern Pinellas (Clearwater, Dunedin, Palm Harbor) — and other Florida cities have far fewer cards so far. An empty result near such a place usually means the area is not scanned yet, not that no such business exists.
 
 ## For business owners
 

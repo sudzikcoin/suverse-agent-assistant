@@ -4,7 +4,7 @@
 
 [![MCP](https://img.shields.io/badge/MCP-streamable%20HTTP-blue)](#60-second-quickstart)
 [![License: MIT](https://img.shields.io/badge/license-MIT%20(schemas%20%26%20docs)-green)](LICENSE)
-[![Cards](https://img.shields.io/badge/cards-12%2C064-orange)](#coverage)
+[![Cards](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fversum.suverse.io%2Fapi%2Fpublic%2Fstats&query=%24.cards&label=cards&color=orange&cacheSeconds=3600)](#coverage)
 [![ToolSDK MCP Registry](https://badges.toolsdk.ai/badge/@toolsdk-remote/versum-agent-assistant)](https://toolsdk-ai.github.io/toolsdk-mcp-registry/#%40toolsdk-remote%2Fversum-agent-assistant)
 
 AI agents can find a local business, see what it sells, check availability and price, and open a real order or booking.
@@ -183,7 +183,7 @@ kinds of things it sells (`tags`). [`taxonomy/niches.json`](taxonomy/niches.json
 
 | | |
 |---|---:|
-| cards on the shelf | 12,064 |
+| cards on the shelf | 12,064 (live count: the badge above, or [/api/public/stats](https://versum.suverse.io/api/public/stats)) |
 | niches | 130 |
 | towns and neighborhoods | 53 |
 

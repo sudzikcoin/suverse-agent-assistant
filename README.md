@@ -18,22 +18,32 @@ the cards to any MCP client.
 
 ## 60-second quickstart
 
-The MCP door (streamable HTTP, no key needed):
+Two MCP doors, both streamable HTTP — no key, no account, no payment:
 
-```
-https://versum.suverse.io/mcp
-```
+| door | |
+|---|---|
+| `https://versum.suverse.io/mcp/catalog` | the free business catalogue: the 15 tools below and nothing else (recommended) |
+| `https://versum.suverse.io/mcp` | the same 15 tools for a client without a key (with a Versum node key it is the compute door) |
 
-Config for an MCP client that takes a JSON server list with streamable-HTTP servers (checked by connecting the
-official MCP TypeScript SDK client with exactly this entry: 15 tools listed, a live call answered):
+**Claude** — Customize → Connectors → **Add custom connector** → URL `https://versum.suverse.io/mcp/catalog` → Add.
+No sign-in is asked for.
+
+**ChatGPT** (plans with Developer mode) — turn on Developer mode in the connector settings, then **Create** a connector
+with the MCP URL `https://versum.suverse.io/mcp/catalog` and no authentication. The menu names differ between ChatGPT
+versions.
+
+**Cursor** (`~/.cursor/mcp.json`) or any client that takes a JSON server list:
 
 ```json
 {
   "mcpServers": {
-    "versum": { "type": "http", "url": "https://versum.suverse.io/mcp" }
+    "versum": { "type": "http", "url": "https://versum.suverse.io/mcp/catalog" }
   }
 }
 ```
+
+Checked by connecting the official MCP TypeScript SDK client with exactly this entry: 15 tools listed, a live call
+answered.
 
 One request — `search_catalog` with `{"query": "a dozen red roses delivered", "location": "Miami, FL", "limit": 3}` —
 and the live answer (2026-11-02), cut to the first business:
@@ -148,6 +158,37 @@ Item $55.00; the totals include the shop's own tax for this address. `placed: fa
 delivery address was sent (no name, e-mail or phone), and the cart session was emptied afterwards. `delivery_date` came back
 `unknown`: the shop does not publish one through its cart.
 
+## Only real businesses
+
+Some «local businesses» are lead-generation sites: one company selling calls under several made-up names. Versum
+checks for them and keeps them out:
+
+- the same price list on several different websites, **and** their phones in the same block of numbers;
+- no licence number on a site in a licensed trade;
+- no owner, founding year or company named;
+- the same site template and text across those sites.
+
+A confirmed lead-generation card is never on the shelf — not in `search_catalog`, `list_cards` or `find_business`,
+not in the sitemap — and its page answers 410. A card that only looks suspicious is reviewed by a person before
+anything is hidden. The check runs every week.
+
+## Publishing standard
+
+Versum also publishes **independent pages** about some local businesses (`versum.suverse.io/offers/…`): written
+only from the business's own public pages, re-checked the day they go live, marked as independent («did not ask for
+it and did not pay for it, and is not a Versum client or partner»), with a way to have them corrected or removed.
+Every page passes 18 checks before it is published. The rules are public:
+**[Our Publishing Standards](https://versum.suverse.io/standards)**.
+
+## Limits
+
+| | |
+|---|---|
+| MCP doors, no key | no per-call limit today — please cache what you read |
+| MCP with a Versum node key | the key's limit, returned in `x-ratelimit-limit` / `-remaining` / `-reset` |
+| owner site: live card builds | 5 a day per address |
+| free check | 3 a day per website, 20 a day per address |
+
 ## The business card
 
 `get_card` returns one card per business. The full schema, inferred from live cards of every kind of business, is
@@ -170,8 +211,8 @@ delivery address was sent (no name, e-mail or phone), and the cart session was e
   | `not_read` | the site could not be read |
 
 - **status** — `unverified`: read from the business's own public pages; the owner has not confirmed it. A business
-  whose owner claimed and confirmed its card shows `owner_verified`. An unclaimed card is one no owner has claimed yet
-  — today, every card.
+  whose owner claimed and confirmed its card shows `owner_verified`. As of 2026-11-08 no business owner has verified
+  a card yet: the only verified cards are Versum's own test businesses, which are not on the shelf.
 
 ## Taxonomy
 
@@ -183,28 +224,39 @@ kinds of things it sells (`tags`). [`taxonomy/niches.json`](taxonomy/niches.json
 
 | | |
 |---|---:|
-| cards on the shelf | 12,064 (live count: the badge above, or [/api/public/stats](https://versum.suverse.io/api/public/stats)) |
-| niches | 130 |
-| towns and neighborhoods | 53 |
+| cards on the shelf | 34,716 (live count: the badge above, or [/api/public/stats](https://versum.suverse.io/api/public/stats)) |
+| niches | 136 |
+| towns and neighborhoods | 87 |
 
-As of 2026-11-04 (02:45 UTC). The catalogue grows daily: about 5,000 new pages on 2026-11-02 and 7,000 on 2026-11-03.
+As of 2026-11-08 (20:36 UTC). Scanning of new areas is paused; existing cards are kept and re-read.
 
-| doors and prices (2026-11-02, out of 7,415 cards then) | |
+| doors and prices (2026-11-08, out of 34,716 cards) | |
 |---|---:|
-| with an online order door | 860 |
-| with an online booking or reservation door | 1,055 |
-| with prices | 1,045 |
+| with an online order door | 2,773 |
+| with an online booking or reservation door | 5,188 |
+| with at least one price | 5,211 |
 
 The densest coverage today is Tampa, St. Petersburg and the eastern Tampa Bay suburbs. Some places are still thin or empty — for example northern Pinellas (Clearwater, Dunedin, Palm Harbor) — and other Florida cities have far fewer cards so far. An empty result near such a place usually means the area is not scanned yet, not that no such business exists.
 
 ## For business owners
 
-- **[versum.suverse.io](https://versum.suverse.io)** — find your business, claim it, edit what the card says and
-  publish it.
-- **`/b/{slug}`** — every card has a public page, for example
+- **Free check: «What AI knows about your business»** — on [versum.suverse.io](https://versum.suverse.io), enter
+  your website and get a score out of 100 by a published formula ([How we score](https://versum.suverse.io/how-we-score)):
+  whether AI assistants name you (three buyer questions per niche and city, asked weekly through Claude with web
+  search — the report names the engine and the date), which facts buyers look for are on your site, whether search and
+  AI bots can read it, how you compare with businesses of your niche within 15 miles, and what to fix first. Every ✓
+  links to the page it was found on. The full report adds every source and a ready LocalBusiness JSON-LD block and
+  `llms.txt` built only from your own facts. Google Maps, reviews and rankings are not part of the check.
+- **Claim your card** on [versum.suverse.io](https://versum.suverse.io): find your business, confirm it is yours (a
+  code to a contact already on your card or website, or Shopify / Square), then edit what the card says and publish
+  it. Every card has a public page, for example
   [versum.suverse.io/b/flowers-of-miami-miami](https://versum.suverse.io/b/flowers-of-miami-miami).
+- **Telegram bot «Versum for Business»** ([@VersumBusinessBot](https://t.me/VersumBusinessBot)): requests from
+  customers and agents arrive there, with buttons to confirm, decline or reply.
 - **Connect Shopify or Square** from the owner page: the card then shows the store's live items, prices and
   availability, and agents can place orders and (Square) book slots in the owner's own system.
+- **Promotion**: independent pages built to the [Publishing Standards](https://versum.suverse.io/standards), started
+  only after the owner verifies the business.
 - Coming soon: the Shopify App Store listing.
 
 ## How it works
@@ -226,21 +278,31 @@ flowchart LR
 
 ## Listed in
 
+- [Official MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=io.suverse.versum) — `io.suverse.versum/catalog` (the earlier entry `io.github.sudzikcoin/versum-agent-assistant` is marked deprecated and points to it)
+- [mcptry](https://mcptry.com/servers/io.suverse.versum/catalog) ([second entry](https://mcptry.com/servers/io.github.sudzikcoin/versum-agent-assistant))
+- [Glama](https://glama.ai/mcp/servers/sudzikcoin/versum-agent-assistant)
+- [mcpub.dev](https://mcpub.dev)
+- [wellknown.network](https://wellknown.network/agents/versum-agent-assistant)
 - [ToolSDK MCP Registry](https://toolsdk-ai.github.io/toolsdk-mcp-registry/#%40toolsdk-remote%2Fversum-agent-assistant)
 
 ## Roadmap
 
 Done:
 - The open reader with a shared cache: [`reader/`](reader).
+- The catalogue-only MCP door `/mcp/catalog` (15 tools, no key).
+- Owner claims, Shopify and Square connections, requests to owners through Telegram.
+- The lead-generation filter.
+- Independent promotion pages and the public [Publishing Standards](https://versum.suverse.io/standards).
+- The free «What AI knows about your business» check for owners.
 
 Next:
 - Publish the npm package `@suverselabs/versum-mcp` (stdio, typed functions for the tools); its source is in [`npm/`](npm).
-- Listings in more MCP catalogues.
 - WhatsApp click-to-chat doors.
+- Scanning more areas (paused today).
 
 ## License and contact
 
 MIT for the schemas, the taxonomy, the documentation and the open reader (`reader/`) in this repository; the hosted
 catalogue's service code is closed.
-[Privacy Policy](https://versum.suverse.io/privacy) · [Terms of Service](https://versum.suverse.io/terms) (SuVerse LLC).
+[Privacy Policy](https://versum.suverse.io/privacy) · [Terms of Service](https://versum.suverse.io/terms) · [Publishing Standards](https://versum.suverse.io/standards) · [How we score](https://versum.suverse.io/how-we-score) (SuVerse LLC).
 Contact: info@suverse.io. The compute side of Versum is [versum-node](https://github.com/sudzikcoin/versum-node).

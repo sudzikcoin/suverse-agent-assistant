@@ -1,12 +1,27 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.sudzikcoin/versum-agent-assistant",
-  "title": "Versum Agent Assistant",
-  "description": "Local businesses for AI agents: what they sell, prices, delivery quotes, order and booking links.",
-  "version": "1.0.0",
-  "websiteUrl": "https://versum.suverse.io",
-  "repository": { "url": "https://github.com/sudzikcoin/versum-agent-assistant", "source": "github" },
+  "name": "io.suverse.versum/catalog",
+  "title": "Versum",
+  "description": "Find local US businesses: what they offer, prices from their own sites, and how to order or book.",
+  "version": "1.6.2",
+  "websiteUrl": "https://versum.suverse.io/docs",
+  "repository": {
+    "url": "https://github.com/sudzikcoin/versum-agent-assistant",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/sudzikcoin/versum-agent-assistant/main/assets/icon-400.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "400x400"
+      ]
+    }
+  ],
   "remotes": [
-    { "type": "streamable-http", "url": "https://versum.suverse.io/mcp" }
+    {
+      "type": "streamable-http",
+      "url": "https://versum.suverse.io/mcp/catalog"
+    }
   ]
 }

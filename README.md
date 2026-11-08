@@ -121,7 +121,7 @@ types instead of returning look-alikes.
 | tool | what it does | main parameters |
 |---|---|---|
 | `list_niches` | the trades the catalogue knows near a place, with counts | `location`, `radius_miles`, `niche` |
-| `list_cards` | every business of one trade near a place, in one fixed order | `niche`, `location` (required), `query`, `needed_by`, `max_price`, `deliver_to`, `page` |
+| `list_cards` | every business of one trade near a place, in one fixed order (online niches: no location) | `niche`, `location` (required for local trades), `query`, `needed_by`, `max_price`, `deliver_to`, `page` |
 | `find_business` | a business by its name | `name` (required), `location` |
 | `search_catalog` | a match by meaning, when the trade is not known | `query` (required), `location`, `fulfillment`, `max_price`, `only_local` |
 | `get_card` | one business in full: what it sells, what can be done, how it reaches you | `id` |
@@ -157,6 +157,20 @@ answers `no_channel` with the card's other doors. Retrying with the same `idempo
 Item $55.00; the totals include the shop's own tax for this address. `placed: false` — nothing was ordered; only the
 delivery address was sent (no name, e-mail or phone), and the cart session was emptied afterwards. `delivery_date` came back
 `unknown`: the shop does not publish one through its cart.
+
+## Online businesses
+
+The catalogue holds every kind of business, not only local ones: software and apps, APIs and MCP servers, online
+shops, open-source tools, content sites and marketplaces. Each card says what it is — **local**, **online**, or
+**both** (a local business that also sells online; a local business with its own app stays local) — and why.
+
+- An online card has no location. It shows «Online service», what it does, who it is for, pricing and plans, a free
+  trial or plan, platforms, integrations / API / docs, support and the company — each read from the business's own
+  pages with a quote.
+- `list_niches` lists the online niches under `online_niches`.
+- `list_cards` with an online niche ignores the location; `search_catalog` with no location and an online request
+  (software, an app, an API…) returns online businesses — never `location_needed`.
+- `get_card` adds an `online` block: every fact with the page it was read on.
 
 ## Only real businesses
 
@@ -246,7 +260,9 @@ The densest coverage today is Tampa, St. Petersburg and the eastern Tampa Bay su
   search — the report names the engine and the date), which facts buyers look for are on your site, whether search and
   AI bots can read it, how you compare with businesses of your niche within 15 miles, and what to fix first. Every ✓
   links to the page it was found on. The full report adds every source and a ready LocalBusiness JSON-LD block and
-  `llms.txt` built only from your own facts. Google Maps, reviews and rankings are not part of the check.
+  `llms.txt` built only from your own facts. Online businesses get their own formula by type (software, API / MCP,
+  online shop, open source, content, marketplace), questions without a city, and SoftwareApplication / Organization
+  code. Google Maps, reviews and rankings are not part of the check.
 - **Claim your card** on [versum.suverse.io](https://versum.suverse.io): find your business, confirm it is yours (a
   code to a contact already on your card or website, or Shopify / Square), then edit what the card says and publish
   it. Every card has a public page, for example

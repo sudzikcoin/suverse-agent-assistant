@@ -244,7 +244,8 @@ no stars, no reviews, no «best», and Versum never orders businesses by it on a
 | Website read in the last 30 days | Versum read the site within 30 days |
 
 Online businesses use their own list for each kind (software, API, shop, open source, content, marketplace), from the
-same config as the free check. Grade: **A** every item · **B** all but one · **C** half or more · **D** less than half.
+same config as the free check. There is no «who it's for» item: the agent decides who a business fits; when the
+business itself states its audience on its site, `get_card` gives it under `stated` with its source, never scored. Grade: **A** every item · **B** all but one · **C** half or more · **D** less than half.
 Every ✓ links to the page it was found on and the date it was read. Method:
 **[versum.suverse.io/transparency](https://versum.suverse.io/transparency)**.
 

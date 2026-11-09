@@ -307,6 +307,23 @@ The densest coverage today is Tampa, St. Petersburg and the eastern Tampa Bay su
   period; open only to owners who verified their business.
 - Coming soon: the Shopify App Store listing.
 
+### Owner API and the owner's own site (2026-11-09)
+
+Everything an owner does — on the web, in the Versum app (iPhone/Android, coming) or through an assistant — is one
+JSON API: **`https://versum.suverse.io/api/owner/v1`** ([OpenAPI](https://versum.suverse.io/api/owner/v1/openapi.json)).
+Sign in with an email code (a short-lived access token plus a refresh token). Signing in proves the contact only: a
+business is managed after a claim verified through a contact the business itself publishes (its website or Google
+listing), a file or tag on its own website, or a person's review of a document — or when the owner added it.
+
+- **Add a business without a website:** name and description in the owner's own words → duplicate check (a strong match
+  means «claim it», a similar name is only a suggestion) → niche → the niche's fields → live, marked «from the owner».
+- **Weak website:** the cabinet shows the Transparency grade and exactly what to add; «Improve my own website» gives
+  JSON-LD, llms.txt and ready text for what the site is missing, and can create DRAFT pages on the owner's WordPress.
+- **The owner's own Versum site** (`versum.suverse.io/s/<name>`): only after the owner turns it on; it shows only
+  owner-approved data; its look is settings only (colours with contrast checks, font, layout, sections) — no custom code.
+
+Agents keep reading the same cards through MCP; nothing here changes the tools below.
+
 ## How it works
 
 1. A scan lists the businesses of a trade in an area.

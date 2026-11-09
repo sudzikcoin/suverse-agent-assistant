@@ -261,8 +261,12 @@ The densest coverage today is Tampa, St. Petersburg and the eastern Tampa Bay su
   AI bots can read it, how you compare with businesses of your niche within 15 miles, and what to fix first. Every ✓
   links to the page it was found on. The full report adds every source and a ready LocalBusiness JSON-LD block and
   `llms.txt` built only from your own facts. Online businesses get their own formula by type (software, API / MCP,
-  online shop, open source, content, marketplace), questions without a city, and SoftwareApplication / Organization
-  code. Google Maps, reviews and rankings are not part of the check.
+  online shop, open source, content, marketplace), questions without a city made from the business's own description
+  and audience (a marketplace is asked where to buy and sell, not which software to use), and SoftwareApplication /
+  Organization code. If the address you enter is an app or sign-in area (`app.…`, `dashboard.…`, `/login`), the public
+  site of the same business is read too and the report says which pages were read. Reports are private (not indexed,
+  not in the sitemap); the check is free with no daily limit for now. Google Maps, reviews and rankings are not part
+  of the check.
 - **Claim your card** on [versum.suverse.io](https://versum.suverse.io): find your business, confirm it is yours (a
   code to a contact already on your card or website, or Shopify / Square), then edit what the card says and publish
   it. Every card has a public page, for example
@@ -271,8 +275,10 @@ The densest coverage today is Tampa, St. Petersburg and the eastern Tampa Bay su
   customers and agents arrive there, with buttons to confirm, decline or reply.
 - **Connect Shopify or Square** from the owner page: the card then shows the store's live items, prices and
   availability, and agents can place orders and (Square) book slots in the owner's own system.
-- **Promotion**: independent pages built to the [Publishing Standards](https://versum.suverse.io/standards), started
-  only after the owner verifies the business.
+- **Grow your business** (on the owner page, at `/grow` and in the bot with `/grow`): the next steps for your card,
+  and **Start promotion** — independent pages built to the [Publishing Standards](https://versum.suverse.io/standards),
+  each published only after it passes all 18 checks, marked as published at the owner's request. Free during the test
+  period; open only to owners who verified their business.
 - Coming soon: the Shopify App Store listing.
 
 ## How it works

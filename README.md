@@ -200,7 +200,7 @@ Every page passes 18 checks before it is published. The rules are public:
 |---|---|
 | MCP doors, no key | no per-call limit today — please cache what you read |
 | MCP with a Versum node key | the key's limit, returned in `x-ratelimit-limit` / `-remaining` / `-reset` |
-| owner site: live card builds | 5 a day per address |
+| owner site: live card builds | no daily cap per address; 60 requests an hour per address |
 | free check | 3 a day per website, 20 a day per address |
 
 ## The business card
@@ -227,6 +227,31 @@ Every page passes 18 checks before it is published. The rules are public:
 - **status** — `unverified`: read from the business's own public pages; the owner has not confirmed it. A business
   whose owner claimed and confirmed its card shows `owner_verified`. As of 2026-11-08 no business owner has verified
   a card yet: the only verified cards are Versum's own test businesses, which are not on the shelf.
+
+## Transparency rating
+
+Every card carries the public **Versum Transparency rating**: how much a buyer can know about the business *before
+contacting it*, from what the business publishes about itself. It is **not** a rating of the quality of the work:
+no stars, no reviews, no «best», and Versum never orders businesses by it on any page.
+
+| item (local business) | counts when |
+|---|---|
+| Prices published | at least one price as text on the business's own pages |
+| Licence shown | only trades that need a state licence (HVAC, plumbing, electrical, roofing, dentists…) |
+| Hours | on the site, the Google Business Profile, or set by the verified owner |
+| Service area / Address | the area served (trades that go to the customer), or a street address (places customers visit) |
+| Phone or a booking / contact link | a tap-to-call number or a booking or contact link |
+| Website read in the last 30 days | Versum read the site within 30 days |
+
+Online businesses use their own list for each kind (software, API, shop, open source, content, marketplace), from the
+same config as the free check. Grade: **A** every item · **B** all but one · **C** half or more · **D** less than half.
+Every ✓ links to the page it was found on and the date it was read. Method:
+**[versum.suverse.io/transparency](https://versum.suverse.io/transparency)**.
+
+For agents: `get_card` → `transparency` {grade, have, of, items with `source` and `read_at`, or `how_to_add`};
+`list_cards` and `find_business` → `transparency` {grade, have, of, items: {key: true|false}} on each card. You may sort
+or filter by it; the list order does not use it. In the card page's JSON-LD it is a plain `additionalProperty`
+(`PropertyValue`, `propertyID: versum-transparency`), not a Review or AggregateRating.
 
 ## Taxonomy
 

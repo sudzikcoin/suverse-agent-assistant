@@ -6,7 +6,7 @@ Local businesses for AI agents: what they sell, prices, delivery quotes, order a
 npx -y @suverselabs/versum-mcp
 ```
 
-A stdio MCP server that forwards everything to the Versum MCP door, `https://versum.suverse.io/mcp`. No logic of its
+A stdio MCP server that forwards everything to the SuVerse MCP door, `https://versum.suverse.io/mcp`. No logic of its
 own, no API key: the tools are the door's own tools (15 today), and a new tool there appears here without an update.
 It also exports a small typed client (below).
 
@@ -33,9 +33,9 @@ npm install @suverselabs/versum-mcp
 ```
 
 ```ts
-import { Versum } from '@suverselabs/versum-mcp'
+import { SuVerse } from '@suverselabs/versum-mcp'
 
-const versum = new Versum()
+const versum = new SuVerse()
 
 // 1. florists near Miami that deliver
 const found = await versum.searchCatalog({ query: 'florist with delivery', location: 'Miami, FL', limit: 3 })
@@ -72,7 +72,7 @@ tool list (`npm run generate`), so a new tool only needs a rebuild. Other langua
 
 ## Read any business website
 
-The same package runs Versum's open reader on your machine — the readers Versum's catalogue uses, for any site:
+The same package runs SuVerse's open reader on your machine — the readers SuVerse's catalogue uses, for any site:
 
 ```
 npx -y @suverselabs/versum-mcp read https://example-business.com --pretty

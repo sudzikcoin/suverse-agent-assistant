@@ -1,6 +1,6 @@
 # Contributing to versum-reader
 
-Thank you. The reader is Versum's own analyzer readers, so a fix here is a fix for every card in Versum's catalogue.
+Thank you. The reader is SuVerse's own analyzer readers, so a fix here is a fix for every card in SuVerse's catalogue.
 
 ## Ground rules
 
@@ -22,7 +22,7 @@ Thank you. The reader is Versum's own analyzer readers, so a fix here is a fix f
   adapters, with a fixture and a test. Pure means no network inside; the reader fetches.
 - **Page words** (how a menu, booking or price page is called in a language): add rows to the page-words data
   (`kind`, `lang`, `word`, `mode`), with an example page title in the PR description.
-- **A recipe** (a path on a host that our reader reads reliably): recipes are enabled only after Versum's pilot has
+- **A recipe** (a path on a host that our reader reads reliably): recipes are enabled only after SuVerse's pilot has
   checked them on many businesses; propose one with three public example URLs in an issue.
 
 ## Workflow

@@ -1,6 +1,6 @@
-# Installing Versum Agent Assistant (for AI agents)
+# Installing SuVerse Agent Assistant (for AI agents)
 
-Versum is a **remote** MCP server. Nothing to clone, build or run, and no API key.
+SuVerse is a **remote** MCP server. Nothing to clone, build or run, and no API key.
 
 Add this server to the MCP settings:
 

@@ -1,6 +1,8 @@
-# Versum Agent Assistant
+# SuVerse Agent Assistant
 
-![Versum — local businesses, connected to AI](assets/versum-banner.jpg)
+**SuVerse — get found by AI.** (Formerly Versum. The service address stays versum.suverse.io for now; the npm package and the registry entry keep their names.)
+
+![SuVerse — local businesses, connected to AI](assets/versum-banner.jpg)
 
 [![MCP](https://img.shields.io/badge/MCP-streamable%20HTTP-blue)](#60-second-quickstart)
 [![License: MIT](https://img.shields.io/badge/license-MIT%20(schemas%20%26%20docs)-green)](LICENSE)
@@ -12,7 +14,7 @@ AI agents can find a local business, see what it sells, check availability and p
 ## Why
 
 Local businesses are close to invisible to AI agents. Their menus, price lists and booking pages are written for
-people, an agent cannot phone the shop, and many businesses have no website an agent could use at all. Versum reads
+people, an agent cannot phone the shop, and many businesses have no website an agent could use at all. SuVerse reads
 what each business publishes, turns it into one card per business with real links to order, book or ask, and serves
 the cards to any MCP client.
 
@@ -23,7 +25,7 @@ Two MCP doors, both streamable HTTP — no key, no account, no payment:
 | door | |
 |---|---|
 | `https://versum.suverse.io/mcp/catalog` | the free business catalogue: the 15 tools below and nothing else (recommended) |
-| `https://versum.suverse.io/mcp` | the same 15 tools for a client without a key (with a Versum node key it is the compute door) |
+| `https://versum.suverse.io/mcp` | the same 15 tools for a client without a key (with a SuVerse node key it is the compute door) |
 
 **Claude** — Customize → Connectors → **Add custom connector** → URL `https://versum.suverse.io/mcp/catalog` → Add.
 No sign-in is asked for.
@@ -79,7 +81,7 @@ and the live answer (2026-11-02), cut to the first business:
 
 ## Read any business website yourself
 
-[`reader/`](reader) is Versum's own open reader: the same readers the catalogue runs, on your machine, for any
+[`reader/`](reader) is SuVerse's own open reader: the same readers the catalogue runs, on your machine, for any
 website — items with prices, the doors to order, book or ask, hours and contacts, every value with the words it was
 read from. No Google, no proxy, no browser; robots.txt obeyed; a model only with your own `ANTHROPIC_API_KEY`
 (`--no-model` turns it off).
@@ -174,7 +176,7 @@ shops, open-source tools, content sites and marketplaces. Each card says what it
 
 ## Only real businesses
 
-Some «local businesses» are lead-generation sites: one company selling calls under several made-up names. Versum
+Some «local businesses» are lead-generation sites: one company selling calls under several made-up names. SuVerse
 checks for them and keeps them out:
 
 - the same price list on several different websites, **and** their phones in the same block of numbers;
@@ -188,9 +190,9 @@ anything is hidden. The check runs every week.
 
 ## Publishing standard
 
-Versum also publishes **independent pages** about some local businesses (`versum.suverse.io/offers/…`): written
+SuVerse also publishes **independent pages** about some local businesses (`versum.suverse.io/offers/…`): written
 only from the business's own public pages, re-checked the day they go live, marked as independent («did not ask for
-it and did not pay for it, and is not a Versum client or partner»), with a way to have them corrected or removed.
+it and did not pay for it, and is not a SuVerse client or partner»), with a way to have them corrected or removed.
 Every page passes 18 checks before it is published. The rules are public:
 **[Our Publishing Standards](https://versum.suverse.io/standards)**.
 
@@ -199,7 +201,7 @@ Every page passes 18 checks before it is published. The rules are public:
 | | |
 |---|---|
 | MCP doors, no key | no per-call limit today — please cache what you read |
-| MCP with a Versum node key | the key's limit, returned in `x-ratelimit-limit` / `-remaining` / `-reset` |
+| MCP with a SuVerse node key | the key's limit, returned in `x-ratelimit-limit` / `-remaining` / `-reset` |
 | owner site: live card builds | no daily cap per address; 60 requests an hour per address |
 | free check | 3 a day per website, 20 a day per address |
 
@@ -226,13 +228,13 @@ Every page passes 18 checks before it is published. The rules are public:
 
 - **status** — `unverified`: read from the business's own public pages; the owner has not confirmed it. A business
   whose owner claimed and confirmed its card shows `owner_verified`. As of 2026-11-08 no business owner has verified
-  a card yet: the only verified cards are Versum's own test businesses, which are not on the shelf.
+  a card yet: the only verified cards are SuVerse's own test businesses, which are not on the shelf.
 
 ## Transparency rating
 
-Every card carries the public **Versum Transparency rating**: how much a buyer can know about the business *before
+Every card carries the public **SuVerse Transparency rating**: how much a buyer can know about the business *before
 contacting it*, from what the business publishes about itself. It is **not** a rating of the quality of the work:
-no stars, no reviews, no «best», and Versum never orders businesses by it on any page.
+no stars, no reviews, no «best», and SuVerse never orders businesses by it on any page.
 
 | item (local business) | counts when |
 |---|---|
@@ -241,7 +243,7 @@ no stars, no reviews, no «best», and Versum never orders businesses by it on a
 | Hours | on the site, the Google Business Profile, or set by the verified owner |
 | Service area / Address | the area served (trades that go to the customer), or a street address (places customers visit) |
 | Phone or a booking / contact link | a tap-to-call number or a booking or contact link |
-| Website read in the last 30 days | Versum read the site within 30 days |
+| Website read in the last 30 days | SuVerse read the site within 30 days |
 
 Online businesses use their own list for each kind (software, API, shop, open source, content, marketplace), from the
 same config as the free check. There is no «who it's for» item: the agent decides who a business fits; when the
@@ -297,7 +299,7 @@ The densest coverage today is Tampa, St. Petersburg and the eastern Tampa Bay su
   code to a contact already on your card or website, or Shopify / Square), then edit what the card says and publish
   it. Every card has a public page, for example
   [versum.suverse.io/b/flowers-of-miami-miami](https://versum.suverse.io/b/flowers-of-miami-miami).
-- **Telegram bot «Versum for Business»** ([@VersumBusinessBot](https://t.me/VersumBusinessBot)): requests from
+- **Telegram bot «SuVerse for Business»** ([@VersumBusinessBot](https://t.me/VersumBusinessBot)): requests from
   customers and agents arrive there, with buttons to confirm, decline or reply.
 - **Connect Shopify or Square** from the owner page: the card then shows the store's live items, prices and
   availability, and agents can place orders and (Square) book slots in the owner's own system.
@@ -309,7 +311,7 @@ The densest coverage today is Tampa, St. Petersburg and the eastern Tampa Bay su
 
 ### Owner API and the owner's own site (2026-11-09)
 
-Everything an owner does — on the web, in the Versum app (iPhone in TestFlight; Android next) or through an assistant — is one
+Everything an owner does — on the web, in the SuVerse app (iPhone in TestFlight; Android next) or through an assistant — is one
 JSON API: **`https://versum.suverse.io/api/owner/v1`** ([OpenAPI](https://versum.suverse.io/api/owner/v1/openapi.json)).
 Sign in with an email code (a short-lived access token plus a refresh token). Signing in proves the contact only: a
 business is managed after a claim verified through a contact the business itself publishes (its website or Google
@@ -319,10 +321,10 @@ listing), a file or tag on its own website, or a person's review of a document �
   means «claim it», a similar name is only a suggestion) → niche → the niche's fields → live, marked «from the owner».
 - **Weak website:** the cabinet shows the Transparency grade and exactly what to add; «Improve my own website» gives
   JSON-LD, llms.txt and ready text for what the site is missing, and can create DRAFT pages on the owner's WordPress.
-- **The owner's own Versum site** (`versum.suverse.io/s/<name>`): only after the owner turns it on; it shows only
+- **The owner's own SuVerse site** (`versum.suverse.io/s/<name>`): only after the owner turns it on; it shows only
   owner-approved data; its look is settings only (colours with contrast checks, font, layout, sections) — no custom code.
 
-- **No sign-in to look around (2026-11-10):** the Versum app opens like the website. Public, token-less doors:
+- **No sign-in to look around (2026-11-10):** the SuVerse app opens like the website. Public, token-less doors:
   `GET public/search?q=` (a business by name and city), `GET public/businesses/{id}` (the read-only view: Transparency
   grade, the AI check score and how often AI named the business, key facts — only what the public card shows),
   `POST public/build` (build a card live when it is not found), and «This is my business»: `GET|POST
@@ -379,4 +381,4 @@ Next:
 MIT for the schemas, the taxonomy, the documentation and the open reader (`reader/`) in this repository; the hosted
 catalogue's service code is closed.
 [Privacy Policy](https://versum.suverse.io/privacy) · [Terms of Service](https://versum.suverse.io/terms) · [Publishing Standards](https://versum.suverse.io/standards) · [How we score](https://versum.suverse.io/how-we-score) (SuVerse LLC).
-Contact: info@suverse.io. The compute side of Versum is [versum-node](https://github.com/sudzikcoin/versum-node).
+Contact: info@suverse.io. The compute side of SuVerse is [versum-node](https://github.com/sudzikcoin/versum-node).

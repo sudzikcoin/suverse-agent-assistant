@@ -6,7 +6,7 @@ Local businesses for AI agents: what they sell, prices, delivery quotes, order a
 npx -y @suverselabs/versum-mcp
 ```
 
-A stdio MCP server that forwards everything to the SuVerse MCP door, `https://versum.suverse.io/mcp`. No logic of its
+A stdio MCP server that forwards everything to the SuVerse MCP door, `https://www.suverse.io/mcp`. No logic of its
 own, no API key: the tools are the door's own tools (15 today), and a new tool there appears here without an update.
 It also exports a small typed client (below).
 
@@ -22,7 +22,7 @@ Claude Desktop (`claude_desktop_config.json`), Cline (MCP settings) and Cursor (
 }
 ```
 
-Clients that speak Streamable HTTP can use the door directly: `https://versum.suverse.io/mcp`.
+Clients that speak Streamable HTTP can use the door directly: `https://www.suverse.io/mcp`.
 
 `npx -y @suverselabs/versum-mcp --tools` prints the tool list.
 
@@ -88,12 +88,12 @@ const card = await read('https://example-business.com', { model: false })
 ```
 
 The shared cache is free and on by default; `--no-share` or `VERSUM_SHARE=0` turns it off. What is sent and kept:
-https://versum.suverse.io/privacy. Source: https://github.com/sudzikcoin/versum-agent-assistant/tree/main/reader
+https://www.suverse.io/privacy. Source: https://github.com/sudzikcoin/versum-agent-assistant/tree/main/reader
 
 ## Links
 
 - Schema, taxonomy and docs: https://github.com/sudzikcoin/versum-agent-assistant
-- Privacy: https://versum.suverse.io/privacy · Terms: https://versum.suverse.io/terms
+- Privacy: https://www.suverse.io/privacy · Terms: https://www.suverse.io/terms
 - Contact: info@suverse.io
 
 MIT © SuVerse LLC

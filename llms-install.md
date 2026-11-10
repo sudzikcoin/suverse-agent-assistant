@@ -7,7 +7,7 @@ Add this server to the MCP settings:
 ```json
 {
   "mcpServers": {
-    "versum": { "type": "streamableHttp", "url": "https://versum.suverse.io/mcp" }
+    "versum": { "type": "streamableHttp", "url": "https://www.suverse.io/mcp" }
   }
 }
 ```
@@ -16,5 +16,5 @@ Add this server to the MCP settings:
 
 Check: list the tools — there are 15 (`list_niches`, `list_cards`, `find_business`, `search_catalog`, `get_card`,
 `get_offering`, `get_product`, `get_business`, `quote_order`, `check_availability`, `place_order`, `book_slot`,
-`order_status`, `request_to_owner`, `request_status`), the same as on `https://versum.suverse.io/mcp/catalog` (the
+`order_status`, `request_to_owner`, `request_status`), the same as on `https://www.suverse.io/mcp/catalog` (the
 catalogue-only door, recommended). Then try `search_catalog` with `{"query": "a dozen red roses delivered", "location": "Miami, FL"}`.

@@ -2,7 +2,7 @@
 
 Read one business website into a card an AI agent can act on: the items it sells with their prices, the doors
 (order, book, reserve, request a quote, call, e-mail), its hours and contacts — every value with the words it was
-read from. These are the same readers [SuVerse](https://versum.suverse.io) runs on its own catalogue, bundled to
+read from. These are the same readers [SuVerse](https://www.suverse.io) runs on its own catalogue, bundled to
 run on your machine.
 
 ## Read any business website
@@ -54,7 +54,7 @@ The card:
 Reading a site costs the site a few requests and costs you a few seconds. When someone has read the same site
 recently, the reader can use that card instead, and your read can save the next person the trip.
 
-- **Before reading**, the reader asks `https://versum.suverse.io/api/reader/cache?url=…` whether a fresh card for
+- **Before reading**, the reader asks `https://www.suverse.io/api/reader/cache?url=…` whether a fresh card for
   that website exists. The request carries **only the website address**. If a fresh card exists it is returned with
   the note «from the shared cache, read <date>»; `--fresh` reads the site anyway.
 - **After reading**, the reader sends the card it built: what the business itself publishes on its public pages
@@ -71,7 +71,7 @@ recently, the reader can use that card instead, and your read can save the next 
 - A cache that is down, slow or over its limit never fails a read.
 - Questions, or deletion of a shared card: info@suverse.io.
 
-The same facts are in SuVerse's privacy policy at https://versum.suverse.io/privacy.
+The same facts are in SuVerse's privacy policy at https://www.suverse.io/privacy.
 
 ## Build from source
 

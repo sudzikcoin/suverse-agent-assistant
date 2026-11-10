@@ -1,12 +1,12 @@
 # SuVerse Agent Assistant
 
-**SuVerse — get found by AI.** (Formerly Versum. The service address stays versum.suverse.io for now; the npm package and the registry entry keep their names.)
+**SuVerse — get found by AI.** (Formerly Versum. The service now lives at www.suverse.io; the old address versum.suverse.io keeps answering for the API and MCP. The npm package and the registry entry keep their names.)
 
 ![SuVerse — local businesses, connected to AI](assets/versum-banner.jpg)
 
 [![MCP](https://img.shields.io/badge/MCP-streamable%20HTTP-blue)](#60-second-quickstart)
 [![License: MIT](https://img.shields.io/badge/license-MIT%20(schemas%20%26%20docs)-green)](LICENSE)
-[![Cards](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fversum.suverse.io%2Fapi%2Fpublic%2Fstats&query=%24.cards&label=cards&color=orange&cacheSeconds=3600)](#coverage)
+[![Cards](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fwww.suverse.io%2Fapi%2Fpublic%2Fstats&query=%24.cards&label=cards&color=orange&cacheSeconds=3600)](#coverage)
 [![ToolSDK MCP Registry](https://badges.toolsdk.ai/badge/@toolsdk-remote/versum-agent-assistant)](https://toolsdk-ai.github.io/toolsdk-mcp-registry/#%40toolsdk-remote%2Fversum-agent-assistant)
 
 AI agents can find a local business, see what it sells, check availability and price, and open a real order or booking.
@@ -24,14 +24,14 @@ Two MCP doors, both streamable HTTP — no key, no account, no payment:
 
 | door | |
 |---|---|
-| `https://versum.suverse.io/mcp/catalog` | the free business catalogue: the 15 tools below and nothing else (recommended) |
-| `https://versum.suverse.io/mcp` | the same 15 tools for a client without a key (with a SuVerse node key it is the compute door) |
+| `https://www.suverse.io/mcp/catalog` | the free business catalogue: the 15 tools below and nothing else (recommended) |
+| `https://www.suverse.io/mcp` | the same 15 tools for a client without a key (with a SuVerse node key it is the compute door) |
 
-**Claude** — Customize → Connectors → **Add custom connector** → URL `https://versum.suverse.io/mcp/catalog` → Add.
+**Claude** — Customize → Connectors → **Add custom connector** → URL `https://www.suverse.io/mcp/catalog` → Add.
 No sign-in is asked for.
 
 **ChatGPT** (plans with Developer mode) — turn on Developer mode in the connector settings, then **Create** a connector
-with the MCP URL `https://versum.suverse.io/mcp/catalog` and no authentication. The menu names differ between ChatGPT
+with the MCP URL `https://www.suverse.io/mcp/catalog` and no authentication. The menu names differ between ChatGPT
 versions.
 
 **Cursor** (`~/.cursor/mcp.json`) or any client that takes a JSON server list:
@@ -39,7 +39,7 @@ versions.
 ```json
 {
   "mcpServers": {
-    "versum": { "type": "http", "url": "https://versum.suverse.io/mcp/catalog" }
+    "versum": { "type": "http", "url": "https://www.suverse.io/mcp/catalog" }
   }
 }
 ```
@@ -93,7 +93,7 @@ node dist/cli.cjs read https://example-business.com --pretty
 
 Its shared cache is free and on by default (`--no-share` or `VERSUM_SHARE=0` turns it off): what is sent and kept
 is in [reader/README.md](reader/README.md#shared-cache--free-on-by-default) and the
-[privacy policy](https://versum.suverse.io/privacy).
+[privacy policy](https://www.suverse.io/privacy).
 
 ## How to search (for agents)
 
@@ -190,11 +190,11 @@ anything is hidden. The check runs every week.
 
 ## Publishing standard
 
-SuVerse also publishes **independent pages** about some local businesses (`versum.suverse.io/offers/…`): written
+SuVerse also publishes **independent pages** about some local businesses (`www.suverse.io/offers/…`): written
 only from the business's own public pages, re-checked the day they go live, marked as independent («did not ask for
 it and did not pay for it, and is not a SuVerse client or partner»), with a way to have them corrected or removed.
 Every page passes 18 checks before it is published. The rules are public:
-**[Our Publishing Standards](https://versum.suverse.io/standards)**.
+**[Our Publishing Standards](https://www.suverse.io/standards)**.
 
 ## Limits
 
@@ -249,7 +249,7 @@ Online businesses use their own list for each kind (software, API, shop, open so
 same config as the free check. There is no «who it's for» item: the agent decides who a business fits; when the
 business itself states its audience on its site, `get_card` gives it under `stated` with its source, never scored. Grade: **A** every item · **B** all but one · **C** half or more · **D** less than half.
 Every ✓ links to the page it was found on and the date it was read. Method:
-**[versum.suverse.io/transparency](https://versum.suverse.io/transparency)**.
+**[www.suverse.io/transparency](https://www.suverse.io/transparency)**.
 
 For agents: `get_card` → `transparency` {grade, have, of, items with `source` and `read_at`, or `how_to_add`};
 `list_cards` and `find_business` → `transparency` {grade, have, of, items: {key: true|false}} on each card. You may sort
@@ -266,7 +266,7 @@ kinds of things it sells (`tags`). [`taxonomy/niches.json`](taxonomy/niches.json
 
 | | |
 |---|---:|
-| cards on the shelf | 34,716 (live count: the badge above, or [/api/public/stats](https://versum.suverse.io/api/public/stats)) |
+| cards on the shelf | 34,716 (live count: the badge above, or [/api/public/stats](https://www.suverse.io/api/public/stats)) |
 | niches | 136 |
 | towns and neighborhoods | 87 |
 
@@ -282,8 +282,8 @@ The densest coverage today is Tampa, St. Petersburg and the eastern Tampa Bay su
 
 ## For business owners
 
-- **Free check: «What AI knows about your business»** — on [versum.suverse.io](https://versum.suverse.io), enter
-  your website and get a score out of 100 by a published formula ([How we score](https://versum.suverse.io/how-we-score)):
+- **Free check: «What AI knows about your business»** — on [www.suverse.io](https://www.suverse.io), enter
+  your website and get a score out of 100 by a published formula ([How we score](https://www.suverse.io/how-we-score)):
   whether AI assistants name you (three buyer questions per niche and city, asked weekly through Claude with web
   search — the report names the engine and the date), which facts buyers look for are on your site, whether search and
   AI bots can read it, how you compare with businesses of your niche within 15 miles, and what to fix first. Every ✓
@@ -295,16 +295,16 @@ The densest coverage today is Tampa, St. Petersburg and the eastern Tampa Bay su
   site of the same business is read too and the report says which pages were read. Reports are private (not indexed,
   not in the sitemap); the check is free with no daily limit for now. Google Maps, reviews and rankings are not part
   of the check.
-- **Claim your card** on [versum.suverse.io](https://versum.suverse.io): find your business, confirm it is yours (a
+- **Claim your card** on [www.suverse.io](https://www.suverse.io): find your business, confirm it is yours (a
   code to a contact already on your card or website, or Shopify / Square), then edit what the card says and publish
   it. Every card has a public page, for example
-  [versum.suverse.io/b/flowers-of-miami-miami](https://versum.suverse.io/b/flowers-of-miami-miami).
+  [www.suverse.io/b/flowers-of-miami-miami](https://www.suverse.io/b/flowers-of-miami-miami).
 - **Telegram bot «SuVerse for Business»** ([@VersumBusinessBot](https://t.me/VersumBusinessBot)): requests from
   customers and agents arrive there, with buttons to confirm, decline or reply.
 - **Connect Shopify or Square** from the owner page: the card then shows the store's live items, prices and
   availability, and agents can place orders and (Square) book slots in the owner's own system.
 - **Grow your business** (on the owner page, at `/grow` and in the bot with `/grow`): the next steps for your card,
-  and **Start promotion** — independent pages built to the [Publishing Standards](https://versum.suverse.io/standards),
+  and **Start promotion** — independent pages built to the [Publishing Standards](https://www.suverse.io/standards),
   each published only after it passes all 18 checks, marked as published at the owner's request. Free during the test
   period; open only to owners who verified their business.
 - Coming soon: the Shopify App Store listing.
@@ -312,7 +312,7 @@ The densest coverage today is Tampa, St. Petersburg and the eastern Tampa Bay su
 ### Owner API and the owner's own site (2026-11-09)
 
 Everything an owner does — on the web, in the SuVerse app (iPhone in TestFlight; Android next) or through an assistant — is one
-JSON API: **`https://versum.suverse.io/api/owner/v1`** ([OpenAPI](https://versum.suverse.io/api/owner/v1/openapi.json)).
+JSON API: **`https://www.suverse.io/api/owner/v1`** ([OpenAPI](https://www.suverse.io/api/owner/v1/openapi.json)).
 Sign in with an email code (a short-lived access token plus a refresh token). Signing in proves the contact only: a
 business is managed after a claim verified through a contact the business itself publishes (its website or Google
 listing), a file or tag on its own website, or a person's review of a document — or when the owner added it.
@@ -321,7 +321,7 @@ listing), a file or tag on its own website, or a person's review of a document �
   means «claim it», a similar name is only a suggestion) → niche → the niche's fields → live, marked «from the owner».
 - **Weak website:** the cabinet shows the Transparency grade and exactly what to add; «Improve my own website» gives
   JSON-LD, llms.txt and ready text for what the site is missing, and can create DRAFT pages on the owner's WordPress.
-- **The owner's own SuVerse site** (`versum.suverse.io/s/<name>`): only after the owner turns it on; it shows only
+- **The owner's own SuVerse site** (`www.suverse.io/s/<name>`): only after the owner turns it on; it shows only
   owner-approved data; its look is settings only (colours with contrast checks, font, layout, sections) — no custom code.
 
 - **No sign-in to look around (2026-11-10):** the SuVerse app opens like the website. Public, token-less doors:
@@ -368,7 +368,7 @@ Done:
 - The catalogue-only MCP door `/mcp/catalog` (15 tools, no key).
 - Owner claims, Shopify and Square connections, requests to owners through Telegram.
 - The lead-generation filter.
-- Independent promotion pages and the public [Publishing Standards](https://versum.suverse.io/standards).
+- Independent promotion pages and the public [Publishing Standards](https://www.suverse.io/standards).
 - The free «What AI knows about your business» check for owners.
 
 Next:
@@ -380,5 +380,5 @@ Next:
 
 MIT for the schemas, the taxonomy, the documentation and the open reader (`reader/`) in this repository; the hosted
 catalogue's service code is closed.
-[Privacy Policy](https://versum.suverse.io/privacy) · [Terms of Service](https://versum.suverse.io/terms) · [Publishing Standards](https://versum.suverse.io/standards) · [How we score](https://versum.suverse.io/how-we-score) (SuVerse LLC).
+[Privacy Policy](https://www.suverse.io/privacy) · [Terms of Service](https://www.suverse.io/terms) · [Publishing Standards](https://www.suverse.io/standards) · [How we score](https://www.suverse.io/how-we-score) (SuVerse LLC).
 Contact: info@suverse.io. The compute side of SuVerse is [versum-node](https://github.com/sudzikcoin/versum-node).

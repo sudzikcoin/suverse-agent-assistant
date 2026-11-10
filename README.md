@@ -309,7 +309,7 @@ The densest coverage today is Tampa, St. Petersburg and the eastern Tampa Bay su
 
 ### Owner API and the owner's own site (2026-11-09)
 
-Everything an owner does — on the web, in the Versum app (iPhone/Android, coming) or through an assistant — is one
+Everything an owner does — on the web, in the Versum app (iPhone in TestFlight; Android next) or through an assistant — is one
 JSON API: **`https://versum.suverse.io/api/owner/v1`** ([OpenAPI](https://versum.suverse.io/api/owner/v1/openapi.json)).
 Sign in with an email code (a short-lived access token plus a refresh token). Signing in proves the contact only: a
 business is managed after a claim verified through a contact the business itself publishes (its website or Google
@@ -321,6 +321,15 @@ listing), a file or tag on its own website, or a person's review of a document �
   JSON-LD, llms.txt and ready text for what the site is missing, and can create DRAFT pages on the owner's WordPress.
 - **The owner's own Versum site** (`versum.suverse.io/s/<name>`): only after the owner turns it on; it shows only
   owner-approved data; its look is settings only (colours with contrast checks, font, layout, sections) — no custom code.
+
+- **No sign-in to look around (2026-11-10):** the Versum app opens like the website. Public, token-less doors:
+  `GET public/search?q=` (a business by name and city), `GET public/businesses/{id}` (the read-only view: Transparency
+  grade, the AI check score and how often AI named the business, key facts — only what the public card shows),
+  `POST public/build` (build a card live when it is not found), and «This is my business»: `GET|POST
+  public/businesses/{id}/claim` sends a code to an email the business itself lists; `POST public/claims/{id}/verify`
+  with the right code makes that contact the manager and signs it in. Limits per connection; 3 codes an hour per business.
+- **Connect to Claude / ChatGPT:** `POST businesses/{id}/mcp-key` gives the owner a personal MCP address for their own
+  card (shown once; a new one turns the old one off).
 
 Agents keep reading the same cards through MCP; nothing here changes the tools below.
 

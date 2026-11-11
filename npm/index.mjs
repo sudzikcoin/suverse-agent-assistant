@@ -1,7 +1,7 @@
 /**
- * import { SuVerse } from '@suverselabs/versum-mcp'
+ * import { SuVerse } from '@suverselabs/suverse-mcp'
  *
- * A thin MCP client of https://versum.suverse.io/mcp: one method per tool (camelCase), each returning the tool's
+ * A thin MCP client of https://www.suverse.io/mcp: one method per tool (camelCase), each returning the tool's
  * JSON answer. No logic of its own and no keys. Methods are made from tools.generated.mjs (scripts/generate.mjs).
  */
 import { Client } from '@modelcontextprotocol/sdk/client/index.js'
@@ -13,7 +13,7 @@ export { TOOLS }
 
 export class SuVerse {
   constructor(options = {}) {
-    this.url = options.url || 'https://versum.suverse.io/mcp'
+    this.url = options.url || 'https://www.suverse.io/mcp'
     this.client = null
   }
 

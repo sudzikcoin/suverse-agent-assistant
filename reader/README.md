@@ -8,11 +8,11 @@ run on your machine.
 ## Read any business website
 
 ```sh
-npx @suverselabs/versum-reader read https://example-bakery.com --pretty
+npx @suverselabs/suverse-reader read https://example-bakery.com --pretty
 ```
 
 ```js
-const { read } = require('@suverselabs/versum-reader')
+const { read } = require('@suverselabs/suverse-reader')
 const card = await read('https://example-bakery.com', { model: false })
 ```
 

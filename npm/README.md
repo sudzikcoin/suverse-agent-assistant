@@ -1,9 +1,9 @@
-# @suverselabs/versum-mcp
+# @suverselabs/suverse-mcp
 
 Local businesses for AI agents: what they sell, prices, delivery quotes, order and booking links.
 
 ```
-npx -y @suverselabs/versum-mcp
+npx -y @suverselabs/suverse-mcp
 ```
 
 A stdio MCP server that forwards everything to the SuVerse MCP door, `https://www.suverse.io/mcp`. No logic of its
@@ -17,23 +17,23 @@ Claude Desktop (`claude_desktop_config.json`), Cline (MCP settings) and Cursor (
 ```json
 {
   "mcpServers": {
-    "suverse": { "command": "npx", "args": ["-y", "@suverselabs/versum-mcp"] }
+    "suverse": { "command": "npx", "args": ["-y", "@suverselabs/suverse-mcp"] }
   }
 }
 ```
 
 Clients that speak Streamable HTTP can use the door directly: `https://www.suverse.io/mcp`.
 
-`npx -y @suverselabs/versum-mcp --tools` prints the tool list.
+`npx -y @suverselabs/suverse-mcp --tools` prints the tool list.
 
 ## Use from code
 
 ```
-npm install @suverselabs/versum-mcp
+npm install @suverselabs/suverse-mcp
 ```
 
 ```ts
-import { SuVerse } from '@suverselabs/versum-mcp'
+import { SuVerse } from '@suverselabs/suverse-mcp'
 
 const suverse = new SuVerse()
 
@@ -75,24 +75,24 @@ tool list (`npm run generate`), so a new tool only needs a rebuild. Other langua
 The same package runs SuVerse's open reader on your machine — the readers SuVerse's catalogue uses, for any site:
 
 ```
-npx -y @suverselabs/versum-mcp read https://example-business.com --pretty
+npx -y @suverselabs/suverse-mcp read https://example-business.com --pretty
 ```
 
 Flags: `--pretty` (a short summary), `--json`, `--no-model` (no model call even with `ANTHROPIC_API_KEY` set),
 `--no-share` (no shared cache), `--fresh` (read even if the cache has a fresh card). From code:
 
 ```ts
-import { read } from '@suverselabs/versum-mcp'
+import { read } from '@suverselabs/suverse-mcp'
 const card = await read('https://example-business.com', { model: false })
 // card.offerings (title, price, currency, link), card.doors (order, book, reserve, request_quote, call, email), card.evidence
 ```
 
 The shared cache is free and on by default; `--no-share` or `VERSUM_SHARE=0` turns it off. What is sent and kept:
-https://www.suverse.io/privacy. Source: https://github.com/sudzikcoin/versum-agent-assistant/tree/main/reader
+https://www.suverse.io/privacy. Source: https://github.com/sudzikcoin/suverse-agent-assistant/tree/main/reader
 
 ## Links
 
-- Schema, taxonomy and docs: https://github.com/sudzikcoin/versum-agent-assistant
+- Schema, taxonomy and docs: https://github.com/sudzikcoin/suverse-agent-assistant
 - Privacy: https://www.suverse.io/privacy · Terms: https://www.suverse.io/terms
 - Contact: info@suverse.io
 

@@ -28,7 +28,7 @@ const stubs = {
 const common = {
   bundle: true, platform: 'node', target: 'node20', format: 'cjs', sourcemap: false, legalComments: 'none', minifyWhitespace: true, // drops the analyzer's internal comments from what ships
   external: ['@anthropic-ai/sdk'], plugins: [stubs], logLevel: 'warning',
-  define: { 'process.env.NEXT_PUBLIC_APP_URL': '"https://versum.suverse.io"', 'process.env.ANALYZER_BROWSER': '"0"' },
+  define: { 'process.env.NEXT_PUBLIC_APP_URL': '"https://www.suverse.io"', 'process.env.ANALYZER_BROWSER': '"0"' },
 }
 await build({ ...common, entryPoints: [join(root, 'src/index.ts')], outfile: join(root, 'dist/index.cjs') })
 await build({ ...common, entryPoints: [join(root, 'src/cli.ts')], outfile: join(root, 'dist/cli.cjs'), banner: { js: '#!/usr/bin/env node' } })

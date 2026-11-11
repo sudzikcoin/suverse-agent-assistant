@@ -1,17 +1,17 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.suverse.versum/catalog",
+  "name": "io.suverse.www/catalog",
   "title": "SuVerse",
   "description": "Find local US businesses: what they offer, prices from their own sites, and how to order or book.",
-  "version": "1.6.2",
-  "websiteUrl": "https://versum.suverse.io/docs",
+  "version": "1.7.0",
+  "websiteUrl": "https://www.suverse.io/docs",
   "repository": {
-    "url": "https://github.com/sudzikcoin/versum-agent-assistant",
+    "url": "https://github.com/sudzikcoin/suverse-agent-assistant",
     "source": "github"
   },
   "icons": [
     {
-      "src": "https://raw.githubusercontent.com/sudzikcoin/versum-agent-assistant/main/assets/icon-400.png",
+      "src": "https://raw.githubusercontent.com/sudzikcoin/suverse-agent-assistant/main/assets/icon-400.png",
       "mimeType": "image/png",
       "sizes": [
         "400x400"
@@ -21,7 +21,7 @@
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://versum.suverse.io/mcp/catalog"
+      "url": "https://www.suverse.io/mcp/catalog"
     }
   ]
 }

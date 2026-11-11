@@ -1,8 +1,8 @@
 {
-  "name": "@suverselabs/versum-mcp",
-  "version": "1.1.0",
+  "name": "@suverselabs/suverse-mcp",
+  "version": "1.2.0",
   "description": "Local businesses for AI agents: what they sell, prices, delivery quotes, order and booking links.",
-  "mcpName": "io.github.sudzikcoin/versum-agent-assistant",
+  "mcpName": "io.github.sudzikcoin/suverse-agent-assistant",
   "type": "module",
   "main": "index.mjs",
   "types": "index.d.ts",
@@ -13,6 +13,7 @@
     }
   },
   "bin": {
+    "suverse-mcp": "bin.mjs",
     "versum-mcp": "bin.mjs"
   },
   "files": [
@@ -43,10 +44,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sudzikcoin/versum-agent-assistant.git",
+    "url": "git+https://github.com/sudzikcoin/suverse-agent-assistant.git",
     "directory": "npm"
   },
-  "homepage": "https://versum.suverse.io",
+  "homepage": "https://www.suverse.io",
   "bugs": {
     "email": "info@suverse.io"
   },

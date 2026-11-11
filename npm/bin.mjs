@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 /**
- * @suverselabs/versum-mcp — a stdio MCP server that forwards everything to the SuVerse MCP door
- * (https://versum.suverse.io/mcp, Streamable HTTP). No logic of its own, no keys: tools/list and tools/call go
+ * @suverselabs/suverse-mcp — a stdio MCP server that forwards everything to the SuVerse MCP door
+ * (https://www.suverse.io/mcp, Streamable HTTP). No logic of its own, no keys: tools/list and tools/call go
  * through unchanged, so a new tool on the door appears here without an update.
  *
- *   npx -y @suverselabs/versum-mcp            # stdio server for Claude Desktop, Cline, Cursor, …
- *   npx -y @suverselabs/versum-mcp --tools    # print the door's tools and exit
+ *   npx -y @suverselabs/suverse-mcp            # stdio server for Claude Desktop, Cline, Cursor, …
+ *   npx -y @suverselabs/suverse-mcp --tools    # print the door's tools and exit
  *
- * Env: VERSUM_MCP_URL to point at another door (default https://versum.suverse.io/mcp).
+ * Env: SUVERSE_MCP_URL (or the old VERSUM_MCP_URL) to point at another door (default https://www.suverse.io/mcp).
  */
 import { Client } from '@modelcontextprotocol/sdk/client/index.js'
 import { StreamableHTTPClientTransport } from '@modelcontextprotocol/sdk/client/streamableHttp.js'
@@ -18,7 +18,7 @@ import { readFileSync } from 'node:fs'
 
 const pkg = JSON.parse(readFileSync(new URL('./package.json', import.meta.url), 'utf8'))
 const args = process.argv.slice(2)
-const url = process.env.VERSUM_MCP_URL || 'https://versum.suverse.io/mcp'
+const url = process.env.SUVERSE_MCP_URL || process.env.VERSUM_MCP_URL || 'https://www.suverse.io/mcp'
 const log = (...a) => console.error('[versum-mcp]', ...a)
 
 // `versum-mcp read <url> [--pretty] [--json] [--no-model] [--no-share] [--fresh]` — SuVerse's open reader on this machine

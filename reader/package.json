@@ -1,14 +1,15 @@
 {
-  "name": "@suverselabs/versum-reader",
-  "version": "0.1.0",
-  "description": "Read any business website into a card an AI agent can act on: items with prices, doors (order, book, reserve, quote, call, email), hours, contacts — every value with its quote. SuVerse's own open reader.",
+  "name": "@suverselabs/suverse-reader",
+  "version": "0.2.0",
+  "description": "Read any business website into a card an AI agent can act on: items with prices, doors (order, book, reserve, quote, call, email), hours, contacts \u2014 every value with its quote. SuVerse's own open reader.",
   "license": "MIT",
   "author": "SuVerse LLC",
-  "homepage": "https://versum.suverse.io",
+  "homepage": "https://www.suverse.io",
   "type": "commonjs",
   "main": "dist/index.cjs",
   "types": "dist/index.d.ts",
   "bin": {
+    "suverse-reader": "dist/cli.cjs",
     "versum-reader": "dist/cli.cjs"
   },
   "files": [
@@ -34,7 +35,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sudzikcoin/versum-agent-assistant.git",
+    "url": "git+https://github.com/sudzikcoin/suverse-agent-assistant.git",
     "directory": "reader"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "source": "list_niches on https://versum.suverse.io/mcp/catalog, 2026-11-02",
+  "source": "list_niches on https://www.suverse.io/mcp/catalog, 2026-11-02",
   "count": 128,
   "how_it_works": "A niche is a trade (key) with the words people use for it (also_called) and the kinds of things it sells (tags). Every card belongs to one or more niches; list_niches, list_cards and search_catalog use them.",
   "niches": [

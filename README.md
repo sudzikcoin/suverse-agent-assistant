@@ -1,8 +1,8 @@
 # SuVerse Agent Assistant
 
-**SuVerse — get found by AI.** (Formerly SuVerse. The service now lives at www.suverse.io; the old address versum.suverse.io keeps answering for the API and MCP. The npm package and the registry entry keep their names.)
+**SuVerse — get found by AI.** (Formerly SuVerse. The service now lives at www.suverse.io; the old address www.suverse.io keeps answering for the API and MCP. The npm package and the registry entry keep their names.)
 
-![SuVerse — local businesses, connected to AI](assets/versum-banner.jpg)
+![SuVerse — local businesses, connected to AI](assets/suverse-banner.jpg)
 
 [![MCP](https://img.shields.io/badge/MCP-streamable%20HTTP-blue)](#60-second-quickstart)
 [![License: MIT](https://img.shields.io/badge/license-MIT%20(schemas%20%26%20docs)-green)](LICENSE)
@@ -66,12 +66,12 @@ and the live answer (2026-11-02), cut to the first business:
           "title": "Three Dozen Roses - Hot Pink",
           "price": 135,
           "availability": "in_stock",
-          "link": "https://morethanflowersmiami.com/miami-more-than-flowers/three-dozen-roses-hot-pink.html?ref=versum"
+          "link": "https://morethanflowersmiami.com/miami-more-than-flowers/three-dozen-roses-hot-pink.html?ref=suverse"
         }
       ],
       "can": ["check_delivery", "contact", "order"],
       "links": {
-        "order": "https://morethanflowersmiami.com/miami-more-than-flowers/mayflower-wrapped-bouquet.html?ref=versum",
+        "order": "https://morethanflowersmiami.com/miami-more-than-flowers/mayflower-wrapped-bouquet.html?ref=suverse",
         "contact": "tel:+17865876195"
       }
     }
@@ -254,7 +254,7 @@ Every ✓ links to the page it was found on and the date it was read. Method:
 For agents: `get_card` → `transparency` {grade, have, of, items with `source` and `read_at`, or `how_to_add`};
 `list_cards` and `find_business` → `transparency` {grade, have, of, items: {key: true|false}} on each card. You may sort
 or filter by it; the list order does not use it. In the card page's JSON-LD it is a plain `additionalProperty`
-(`PropertyValue`, `propertyID: versum-transparency`), not a Review or AggregateRating.
+(`PropertyValue`, `propertyID: suverse-transparency`), not a Review or AggregateRating.
 
 ## Taxonomy
 
@@ -354,9 +354,9 @@ flowchart LR
 
 ## Listed in
 
-- [Official MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=io.suverse.versum) — `io.suverse.versum/catalog` (the earlier entry `io.github.sudzikcoin/versum-agent-assistant` is marked deprecated and points to it)
-- [mcptry](https://mcptry.com/servers/io.suverse.versum/catalog) ([second entry](https://mcptry.com/servers/io.github.sudzikcoin/versum-agent-assistant))
-- [Glama](https://glama.ai/mcp/servers/sudzikcoin/versum-agent-assistant)
+- [Official MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=suverse) — `io.suverse.www/catalog` and `io.github.sudzikcoin/suverse-agent-assistant` (the earlier Versum-named entries `io.suverse.versum/catalog` and `io.github.sudzikcoin/versum-agent-assistant` are marked deprecated and point here; their addresses keep working)
+- [mcptry](https://mcptry.com/servers/io.suverse.www/catalog) (mirrors the official registry)
+- [Glama](https://glama.ai/mcp/servers/sudzikcoin/suverse-agent-assistant)
 - [mcpub.dev](https://mcpub.dev)
 - [wellknown.network](https://wellknown.network/agents/versum-agent-assistant)
 - [ToolSDK MCP Registry](https://toolsdk-ai.github.io/toolsdk-mcp-registry/#%40toolsdk-remote%2Fversum-agent-assistant)
@@ -372,7 +372,7 @@ Done:
 - The free «What AI knows about your business» check for owners.
 
 Next:
-- Publish the npm package `@suverselabs/versum-mcp` (stdio, typed functions for the tools); its source is in [`npm/`](npm).
+- Publish the npm package `@suverselabs/suverse-mcp` (stdio, typed functions for the tools); its source is in [`npm/`](npm).
 - WhatsApp click-to-chat doors.
 - Scanning more areas (paused today).
 
@@ -381,4 +381,4 @@ Next:
 MIT for the schemas, the taxonomy, the documentation and the open reader (`reader/`) in this repository; the hosted
 catalogue's service code is closed.
 [Privacy Policy](https://www.suverse.io/privacy) · [Terms of Service](https://www.suverse.io/terms) · [Publishing Standards](https://www.suverse.io/standards) · [How we score](https://www.suverse.io/how-we-score) (SuVerse LLC).
-Contact: info@suverse.io. The compute side of SuVerse is [versum-node](https://github.com/sudzikcoin/versum-node).
+Contact: info@suverse.io. The compute side of SuVerse is [suverse-node](https://github.com/sudzikcoin/suverse-node).

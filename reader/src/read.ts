@@ -179,7 +179,7 @@ function emptyCard(url: string): Card {
 export async function read(input: string, opts: ReadOptions = {}): Promise<Card> {
   const url = normalizeUrl(input)
   const share = opts.share ?? !/^(?:0|false|no)$/i.test(process.env.VERSUM_SHARE ?? '')
-  const base = (opts.base ?? process.env.VERSUM_BASE ?? 'https://versum.suverse.io').replace(/\/$/, '')
+  const base = (opts.base ?? process.env.VERSUM_BASE ?? 'https://www.suverse.io').replace(/\/$/, '')
   if (share && !opts.fresh) {
     const hit = await cacheGet(base, url)
     if (hit) return { ...hit.card, notes: [...(hit.card.notes ?? []), `from the shared cache, read ${hit.card.read_at?.slice(0, 10) ?? 'recently'}`] }

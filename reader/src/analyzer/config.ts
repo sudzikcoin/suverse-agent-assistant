@@ -57,7 +57,7 @@ export const config = {
     profileExcerptChars: num('ANALYZER_PROFILE_EXCERPT_CHARS', 6000),
     profileWindowChars: num('ANALYZER_PROFILE_WINDOW_CHARS', 400),
     profileBudgetMs: num('ANALYZER_PROFILE_BUDGET_MS', 45000),
-    hubUrl: (process.env.NEXT_PUBLIC_APP_URL ?? 'https://versum.suverse.io').replace(/\/$/, ''),
+    hubUrl: (process.env.NEXT_PUBLIC_APP_URL ?? 'https://www.suverse.io').replace(/\/$/, ''),
 } as const;
 export function userAgent(): string {
     return `VersumAnalyzer/0.1 (+${config.hubUrl}/analyzer)`;

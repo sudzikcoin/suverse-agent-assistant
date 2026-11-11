@@ -1,7 +1,7 @@
 {
   "name": "@suverselabs/versum-reader",
   "version": "0.1.0",
-  "description": "Read any business website into a card an AI agent can act on: items with prices, doors (order, book, reserve, quote, call, email), hours, contacts — every value with its quote. Versum's own open reader.",
+  "description": "Read any business website into a card an AI agent can act on: items with prices, doors (order, book, reserve, quote, call, email), hours, contacts — every value with its quote. SuVerse's own open reader.",
   "license": "MIT",
   "author": "SuVerse LLC",
   "homepage": "https://versum.suverse.io",

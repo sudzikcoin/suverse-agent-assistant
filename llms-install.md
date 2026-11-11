@@ -7,7 +7,7 @@ Add this server to the MCP settings:
 ```json
 {
   "mcpServers": {
-    "versum": { "type": "streamableHttp", "url": "https://www.suverse.io/mcp" }
+    "suverse": { "type": "streamableHttp", "url": "https://www.suverse.io/mcp" }
   }
 }
 ```

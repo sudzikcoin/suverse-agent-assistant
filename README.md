@@ -1,6 +1,6 @@
 # SuVerse Agent Assistant
 
-**SuVerse — get found by AI.** (Formerly Versum. The service now lives at www.suverse.io; the old address versum.suverse.io keeps answering for the API and MCP. The npm package and the registry entry keep their names.)
+**SuVerse — get found by AI.** (Formerly SuVerse. The service now lives at www.suverse.io; the old address versum.suverse.io keeps answering for the API and MCP. The npm package and the registry entry keep their names.)
 
 ![SuVerse — local businesses, connected to AI](assets/versum-banner.jpg)
 
@@ -39,7 +39,7 @@ versions.
 ```json
 {
   "mcpServers": {
-    "versum": { "type": "http", "url": "https://www.suverse.io/mcp/catalog" }
+    "suverse": { "type": "http", "url": "https://www.suverse.io/mcp/catalog" }
   }
 }
 ```

@@ -1,5 +1,5 @@
 {
   "mcpServers": {
-    "versum": { "url": "https://versum.suverse.io/mcp" }
+    "suverse": { "url": "https://versum.suverse.io/mcp" }
   }
 }

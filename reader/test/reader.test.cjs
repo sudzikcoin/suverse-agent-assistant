@@ -83,7 +83,7 @@ test('a model item is kept only with its words on a page we fetched', () => {
   assert.equal(itemPasses({ name: 'Lavender Soap Bar', price: 6.5, currency: 'USD', quote: 'Lavender Soap Bar — $6.50 each', source_url: 'https://b.example/' }, pages), false)
 })
 
-test('the ship-time sentence is the analyzer\'s, character for character', { skip: !fs.existsSync(path.join(__dirname, '../../../analyzer/src/universal/open-layer.ts')) && 'outside the Versum monorepo' }, () => {
+test('the ship-time sentence is the analyzer\'s, character for character', { skip: !fs.existsSync(path.join(__dirname, '../../../analyzer/src/universal/open-layer.ts')) && 'outside the SuVerse monorepo' }, () => {
   const ours = fs.readFileSync(path.join(__dirname, '../src/read.ts'), 'utf8').match(/export const LEAD_TIME = (\/.*\/i)/)[1]
   const theirs = fs.readFileSync(path.join(__dirname, '../../../analyzer/src/universal/open-layer.ts'), 'utf8').match(/const LEAD_TIME = (\/.*\/i)/)[1]
   assert.equal(ours, theirs)

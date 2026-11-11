@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * @suverselabs/versum-mcp — a stdio MCP server that forwards everything to the Versum MCP door
+ * @suverselabs/versum-mcp — a stdio MCP server that forwards everything to the SuVerse MCP door
  * (https://versum.suverse.io/mcp, Streamable HTTP). No logic of its own, no keys: tools/list and tools/call go
  * through unchanged, so a new tool on the door appears here without an update.
  *
@@ -21,7 +21,7 @@ const args = process.argv.slice(2)
 const url = process.env.VERSUM_MCP_URL || 'https://versum.suverse.io/mcp'
 const log = (...a) => console.error('[versum-mcp]', ...a)
 
-// `versum-mcp read <url> [--pretty] [--json] [--no-model] [--no-share] [--fresh]` — Versum's open reader on this machine
+// `versum-mcp read <url> [--pretty] [--json] [--no-model] [--no-share] [--fresh]` — SuVerse's open reader on this machine
 if (args[0] === 'read') {
   const { spawnSync } = await import('node:child_process')
   const { fileURLToPath } = await import('node:url')
@@ -29,7 +29,7 @@ if (args[0] === 'read') {
   process.exit(r.status ?? 1)
 } else {
 if (args.includes('--help') || args.includes('-h')) {
-  console.error(`usage: versum-mcp [--tools] | versum-mcp read <url> [--pretty] [--json] [--no-model] [--no-share] [--fresh]\nA stdio MCP server forwarding to ${url} (no key needed), and Versum's open reader.`)
+  console.error(`usage: versum-mcp [--tools] | versum-mcp read <url> [--pretty] [--json] [--no-model] [--no-share] [--fresh]\nA stdio MCP server forwarding to ${url} (no key needed), and SuVerse's open reader.`)
   process.exit(0)
 }
 
@@ -48,7 +48,7 @@ if (args.includes('--tools')) {
   process.exit(0)
 }
 
-const server = new Server({ name: 'versum', version: pkg.version }, { capabilities: { tools: { listChanged: false } } })
+const server = new Server({ name: 'suverse', version: pkg.version }, { capabilities: { tools: { listChanged: false } } })
 server.setRequestHandler(ListToolsRequestSchema, async (req) => upstream.listTools(req.params))
 server.setRequestHandler(CallToolRequestSchema, async (req) => upstream.callTool(req.params))
 await server.connect(new StdioServerTransport())

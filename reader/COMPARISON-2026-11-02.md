@@ -1,7 +1,7 @@
-# The open reader vs Versum's stored cards — 10 sites, 2026-11-02
+# The open reader vs SuVerse's stored cards — 10 sites, 2026-11-02
 
-`versum-reader read <site> --no-share --no-model` (version 0.1.0) on the websites of 10 businesses in Versum's
-catalogue, compared with the card Versum's analyzer stored for the same business. The stored card also has
+`versum-reader read <site> --no-share --no-model` (version 0.1.0) on the websites of 10 businesses in SuVerse's
+catalogue, compared with the card SuVerse's analyzer stored for the same business. The stored card also has
 Google's data (phone, opening hours), the ordering-platform menus the analyzer follows, PDF/image menus and the
 fill agent; the reader has none of those by design.
 

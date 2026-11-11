@@ -1,5 +1,5 @@
 /**
- * The data the readers learn from, as JSON snapshots taken from Versum's catalogue by scripts/snapshot.ts:
+ * The data the readers learn from, as JSON snapshots taken from SuVerse's catalogue by scripts/snapshot.ts:
  * the page words in every language, the platform registry (which host belongs to which platform) and the
  * recipes proven on many businesses. Plain data: no keys, no addresses of ours.
  */

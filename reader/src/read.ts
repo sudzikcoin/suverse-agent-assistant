@@ -1,7 +1,7 @@
 /**
  * ─── VERSUM READER: ONE BUSINESS WEBSITE → ONE CARD ───
  *
- * The same readers Versum's own analyzer runs (bundled from analyzer/src), on the developer's machine:
+ * The same readers SuVerse's own analyzer runs (bundled from analyzer/src), on the developer's machine:
  * robots.txt respected, one request per host per second, no proxy, no browser, no logins, no Google.
  * Every value carries the words it was read from. A page that hides everything behind JavaScript is
  * reported as such, not rendered.

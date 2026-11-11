@@ -494,8 +494,8 @@ export interface VersumOptions {
   url?: string
 }
 
-/** A typed client of the Versum MCP door. Every method calls the tool of the same name and returns its JSON answer. */
-export declare class Versum {
+/** A typed client of the SuVerse MCP door. Every method calls the tool of the same name and returns its JSON answer. */
+export declare class SuVerse {
   constructor(options?: VersumOptions)
   /** connect explicitly (methods connect on first use) */
   connect(): Promise<this>
@@ -557,7 +557,10 @@ export interface ReadOptions {
   base?: string
 }
 
-/** Read one business website on this machine with Versum's open reader. */
+/** Read one business website on this machine with SuVerse's open reader. */
 export declare function read(url: string, options?: ReadOptions): Promise<ReaderCard>
 
 export declare const TOOLS: ReadonlyArray<{ name: string; method: string }>
+
+/** the class was called Versum before 11-11; the old name keeps working */
+export { SuVerse as Versum }

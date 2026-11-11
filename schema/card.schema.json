@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://raw.githubusercontent.com/sudzikcoin/versum-agent-assistant/main/schema/card.schema.json",
-  "title": "Versum business card",
-  "description": "The card get_card returns on the Versum MCP door (https://versum.suverse.io/mcp). Inferred from live cards of every family (restaurant, florist, shop, booking, quote, live Shopify and Square) on 2026-11-02; fields marked required were present on every one of them.",
+  "title": "SuVerse business card",
+  "description": "The card get_card returns on the SuVerse MCP door (https://versum.suverse.io/mcp). Inferred from live cards of every family (restaurant, florist, shop, booking, quote, live Shopify and Square) on 2026-11-02; fields marked required were present on every one of them.",
   "type": "object",
   "properties": {
     "id": {

@@ -17,7 +17,7 @@ Claude Desktop (`claude_desktop_config.json`), Cline (MCP settings) and Cursor (
 ```json
 {
   "mcpServers": {
-    "versum": { "command": "npx", "args": ["-y", "@suverselabs/versum-mcp"] }
+    "suverse": { "command": "npx", "args": ["-y", "@suverselabs/versum-mcp"] }
   }
 }
 ```
@@ -35,18 +35,18 @@ npm install @suverselabs/versum-mcp
 ```ts
 import { SuVerse } from '@suverselabs/versum-mcp'
 
-const versum = new SuVerse()
+const suverse = new SuVerse()
 
 // 1. florists near Miami that deliver
-const found = await versum.searchCatalog({ query: 'florist with delivery', location: 'Miami, FL', limit: 3 })
+const found = await suverse.searchCatalog({ query: 'florist with delivery', location: 'Miami, FL', limit: 3 })
 
 // 2. what 12 red roses cost delivered to Miami Beach 33139 — asked of the shop's own cart, nothing is ordered
-const quote = await versum.quoteOrder({
+const quote = await suverse.quoteOrder({
   offering_id: 'a05bbf1c-32c0-4a56-9038-310b0c35b852',   // Flowers of Miami · Tiny Bouquet of 12 Red Roses with Baby Breath
   deliver_to: { postcode: '33139', state: 'FL', city: 'Miami Beach' },
 })
 
-await versum.close()
+await suverse.close()
 ```
 
 Real answers (2026-11-02), cut down:
